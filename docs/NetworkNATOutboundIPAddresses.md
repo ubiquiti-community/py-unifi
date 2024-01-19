@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_nat_outbound_ip_addresses import NetworkNATOutboundIPAddresses
+from unifi_client.models.network_nat_outbound_ip_addresses import NetworkNATOutboundIPAddresses
 
 # TODO update the JSON string below
 json = "{}"

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.spatial_record_position import SpatialRecordPosition
+from unifi_client.models.spatial_record_position import SpatialRecordPosition
 
 class TestSpatialRecordPosition(unittest.TestCase):
     """SpatialRecordPosition unit test stubs"""

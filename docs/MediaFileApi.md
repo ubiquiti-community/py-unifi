@@ -1,4 +1,4 @@
-# openapi_client.MediaFileApi
+# unifi_client.MediaFileApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_file import MediaFile
-from openapi_client.models.media_file_response import MediaFileResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.media_file import MediaFile
+from unifi_client.models.media_file_response import MediaFileResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaFileApi(api_client)
-    media_file = openapi_client.MediaFile() # MediaFile |  (optional)
+    api_instance = unifi_client.MediaFileApi(api_client)
+    media_file = unifi_client.MediaFile() # MediaFile |  (optional)
 
     try:
-        api_response = api_instance.create_media_file(media_file=media_file)
+        api_response = await api_instance.create_media_file(media_file=media_file)
         print("The response of MediaFileApi->create_media_file:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_file_response import MediaFileResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.media_file_response import MediaFileResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaFileApi(api_client)
+    api_instance = unifi_client.MediaFileApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_media_file(id)
+        api_response = await api_instance.delete_media_file(id)
         print("The response of MediaFileApi->delete_media_file:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_file_response import MediaFileResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.media_file_response import MediaFileResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaFileApi(api_client)
+    api_instance = unifi_client.MediaFileApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_media_file(id)
+        api_response = await api_instance.get_media_file(id)
         print("The response of MediaFileApi->get_media_file:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_file_response import MediaFileResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.media_file_response import MediaFileResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaFileApi(api_client)
+    api_instance = unifi_client.MediaFileApi(api_client)
 
     try:
-        api_response = api_instance.list_media_file()
+        api_response = await api_instance.list_media_file()
         print("The response of MediaFileApi->list_media_file:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_file_response import MediaFileResponse
-from openapi_client.models.media_file_update_request import MediaFileUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.media_file_response import MediaFileResponse
+from unifi_client.models.media_file_update_request import MediaFileUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaFileApi(api_client)
+    api_instance = unifi_client.MediaFileApi(api_client)
     id = 'id_example' # str | 
-    media_file_update_request = openapi_client.MediaFileUpdateRequest() # MediaFileUpdateRequest |  (optional)
+    media_file_update_request = unifi_client.MediaFileUpdateRequest() # MediaFileUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_media_file(id, media_file_update_request=media_file_update_request)
+        api_response = await api_instance.update_media_file(id, media_file_update_request=media_file_update_request)
         print("The response of MediaFileApi->update_media_file:\n")
         pprint(api_response)
     except Exception as e:

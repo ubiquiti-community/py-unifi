@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_magic_site_to_site_vpn import SettingMagicSiteToSiteVpn
+from unifi_client.models.setting_magic_site_to_site_vpn import SettingMagicSiteToSiteVpn
 
 class TestSettingMagicSiteToSiteVpn(unittest.TestCase):
     """SettingMagicSiteToSiteVpn unit test stubs"""

@@ -1,4 +1,4 @@
-# openapi_client.TagApi
+# unifi_client.TagApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.tag import Tag
-from openapi_client.models.tag_response import TagResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.tag import Tag
+from unifi_client.models.tag_response import TagResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TagApi(api_client)
-    tag = openapi_client.Tag() # Tag |  (optional)
+    api_instance = unifi_client.TagApi(api_client)
+    tag = unifi_client.Tag() # Tag |  (optional)
 
     try:
-        api_response = api_instance.create_tag(tag=tag)
+        api_response = await api_instance.create_tag(tag=tag)
         print("The response of TagApi->create_tag:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.tag_response import TagResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.tag_response import TagResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TagApi(api_client)
+    api_instance = unifi_client.TagApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_tag(id)
+        api_response = await api_instance.delete_tag(id)
         print("The response of TagApi->delete_tag:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.tag_response import TagResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.tag_response import TagResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TagApi(api_client)
+    api_instance = unifi_client.TagApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_tag(id)
+        api_response = await api_instance.get_tag(id)
         print("The response of TagApi->get_tag:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.tag_response import TagResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.tag_response import TagResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TagApi(api_client)
+    api_instance = unifi_client.TagApi(api_client)
 
     try:
-        api_response = api_instance.list_tag()
+        api_response = await api_instance.list_tag()
         print("The response of TagApi->list_tag:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.tag_response import TagResponse
-from openapi_client.models.tag_update_request import TagUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.tag_response import TagResponse
+from unifi_client.models.tag_update_request import TagUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TagApi(api_client)
+    api_instance = unifi_client.TagApi(api_client)
     id = 'id_example' # str | 
-    tag_update_request = openapi_client.TagUpdateRequest() # TagUpdateRequest |  (optional)
+    tag_update_request = unifi_client.TagUpdateRequest() # TagUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_tag(id, tag_update_request=tag_update_request)
+        api_response = await api_instance.update_tag(id, tag_update_request=tag_update_request)
         print("The response of TagApi->update_tag:\n")
         pprint(api_response)
     except Exception as e:

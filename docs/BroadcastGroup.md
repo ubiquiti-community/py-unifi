@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.broadcast_group import BroadcastGroup
+from unifi_client.models.broadcast_group import BroadcastGroup
 
 # TODO update the JSON string below
 json = "{}"

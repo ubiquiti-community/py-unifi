@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_ethernet_overrides import DeviceEthernetOverrides
+from unifi_client.models.device_ethernet_overrides import DeviceEthernetOverrides
 
 # TODO update the JSON string below
 json = "{}"

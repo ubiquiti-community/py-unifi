@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ether_lighting_response import SettingEtherLightingResponse
+from unifi_client.models.setting_ether_lighting_response import SettingEtherLightingResponse
 
 class TestSettingEtherLightingResponse(unittest.TestCase):
     """SettingEtherLightingResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingEtherLightingResponse(unittest.TestCase):
         if include_optional:
             return SettingEtherLightingResponse(
                 data = [
-                    openapi_client.models.setting_ether_lighting.SettingEtherLighting(
+                    unifi_client.models.setting_ether_lighting.SettingEtherLighting(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -45,18 +45,18 @@ class TestSettingEtherLightingResponse(unittest.TestCase):
                         attr_no_edit = True, 
                         key = '', 
                         network_overrides = [
-                            openapi_client.models.setting_ether_lighting_network_overrides.SettingEtherLightingNetworkOverrides(
+                            unifi_client.models.setting_ether_lighting_network_overrides.SettingEtherLightingNetworkOverrides(
                                 key = '', 
                                 raw_color_hex = '', )
                             ], 
                         site_id = '', 
                         speed_overrides = [
-                            openapi_client.models.setting_ether_lighting_speed_overrides.SettingEtherLightingSpeedOverrides(
+                            unifi_client.models.setting_ether_lighting_speed_overrides.SettingEtherLightingSpeedOverrides(
                                 key = '', 
                                 raw_color_hex = '', )
                             ], )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

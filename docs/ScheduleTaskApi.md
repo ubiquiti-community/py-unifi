@@ -1,4 +1,4 @@
-# openapi_client.ScheduleTaskApi
+# unifi_client.ScheduleTaskApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.schedule_task import ScheduleTask
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.schedule_task import ScheduleTask
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduleTaskApi(api_client)
-    schedule_task = openapi_client.ScheduleTask() # ScheduleTask |  (optional)
+    api_instance = unifi_client.ScheduleTaskApi(api_client)
+    schedule_task = unifi_client.ScheduleTask() # ScheduleTask |  (optional)
 
     try:
-        api_response = api_instance.create_schedule_task(schedule_task=schedule_task)
+        api_response = await api_instance.create_schedule_task(schedule_task=schedule_task)
         print("The response of ScheduleTaskApi->create_schedule_task:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduleTaskApi(api_client)
+    api_instance = unifi_client.ScheduleTaskApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_schedule_task(id)
+        api_response = await api_instance.delete_schedule_task(id)
         print("The response of ScheduleTaskApi->delete_schedule_task:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduleTaskApi(api_client)
+    api_instance = unifi_client.ScheduleTaskApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_schedule_task(id)
+        api_response = await api_instance.get_schedule_task(id)
         print("The response of ScheduleTaskApi->get_schedule_task:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduleTaskApi(api_client)
+    api_instance = unifi_client.ScheduleTaskApi(api_client)
 
     try:
-        api_response = api_instance.list_schedule_task()
+        api_response = await api_instance.list_schedule_task()
         print("The response of ScheduleTaskApi->list_schedule_task:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
-from openapi_client.models.schedule_task_update_request import ScheduleTaskUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.models.schedule_task_update_request import ScheduleTaskUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduleTaskApi(api_client)
+    api_instance = unifi_client.ScheduleTaskApi(api_client)
     id = 'id_example' # str | 
-    schedule_task_update_request = openapi_client.ScheduleTaskUpdateRequest() # ScheduleTaskUpdateRequest |  (optional)
+    schedule_task_update_request = unifi_client.ScheduleTaskUpdateRequest() # ScheduleTaskUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_schedule_task(id, schedule_task_update_request=schedule_task_update_request)
+        api_response = await api_instance.update_schedule_task(id, schedule_task_update_request=schedule_task_update_request)
         print("The response of ScheduleTaskApi->update_schedule_task:\n")
         pprint(api_response)
     except Exception as e:

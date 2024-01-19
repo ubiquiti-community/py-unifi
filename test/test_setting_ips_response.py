@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_response import SettingIpsResponse
+from unifi_client.models.setting_ips_response import SettingIpsResponse
 
 class TestSettingIpsResponse(unittest.TestCase):
     """SettingIpsResponse unit test stubs"""
@@ -37,10 +37,10 @@ class TestSettingIpsResponse(unittest.TestCase):
         if include_optional:
             return SettingIpsResponse(
                 data = [
-                    openapi_client.models.setting_ips.SettingIps(
+                    unifi_client.models.setting_ips.SettingIps(
                         _id = '', 
                         ad_blocking_configurations = [
-                            openapi_client.models.setting_ips_ad_blocking_configurations.SettingIpsAdBlockingConfigurations(
+                            unifi_client.models.setting_ips_ad_blocking_configurations.SettingIpsAdBlockingConfigurations(
                                 network_id = '', )
                             ], 
                         ad_blocking_enabled = True, 
@@ -51,7 +51,7 @@ class TestSettingIpsResponse(unittest.TestCase):
                         attr_no_edit = True, 
                         dns_filtering = True, 
                         dns_filters = [
-                            openapi_client.models.setting_ips_dns_filters.SettingIpsDNSFilters(
+                            unifi_client.models.setting_ips_dns_filters.SettingIpsDNSFilters(
                                 allowed_sites = [
                                     ''
                                     ], 
@@ -74,7 +74,7 @@ class TestSettingIpsResponse(unittest.TestCase):
                             ''
                             ], 
                         honeypot = [
-                            openapi_client.models.setting_ips_honeypot.SettingIpsHoneypot(
+                            unifi_client.models.setting_ips_honeypot.SettingIpsHoneypot(
                                 ip_address = '', 
                                 network_id = '', 
                                 version = '', )
@@ -86,15 +86,15 @@ class TestSettingIpsResponse(unittest.TestCase):
                         restrict_tor = True, 
                         restrict_torrents = True, 
                         site_id = '', 
-                        suppression = openapi_client.models.setting_ips_suppression.SettingIpsSuppression(
+                        suppression = unifi_client.models.setting_ips_suppression.SettingIpsSuppression(
                             alerts = [
-                                openapi_client.models.setting_ips_alerts.SettingIpsAlerts(
+                                unifi_client.models.setting_ips_alerts.SettingIpsAlerts(
                                     category = '', 
                                     gid = 56, 
                                     id = 56, 
                                     signature = '', 
                                     tracking = [
-                                        openapi_client.models.setting_ips_tracking.SettingIpsTracking(
+                                        unifi_client.models.setting_ips_tracking.SettingIpsTracking(
                                             direction = '', 
                                             mode = '', 
                                             value = '', )
@@ -102,13 +102,13 @@ class TestSettingIpsResponse(unittest.TestCase):
                                     type = '', )
                                 ], 
                             whitelist = [
-                                openapi_client.models.setting_ips_whitelist.SettingIpsWhitelist(
+                                unifi_client.models.setting_ips_whitelist.SettingIpsWhitelist(
                                     direction = '', 
                                     mode = '', 
                                     value = '', )
                                 ], ), )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

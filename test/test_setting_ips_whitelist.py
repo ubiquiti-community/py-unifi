@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_whitelist import SettingIpsWhitelist
+from unifi_client.models.setting_ips_whitelist import SettingIpsWhitelist
 
 class TestSettingIpsWhitelist(unittest.TestCase):
     """SettingIpsWhitelist unit test stubs"""

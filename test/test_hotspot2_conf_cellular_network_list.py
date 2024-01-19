@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_cellular_network_list import Hotspot2ConfCellularNetworkList
+from unifi_client.models.hotspot2_conf_cellular_network_list import Hotspot2ConfCellularNetworkList
 
 class TestHotspot2ConfCellularNetworkList(unittest.TestCase):
     """Hotspot2ConfCellularNetworkList unit test stubs"""

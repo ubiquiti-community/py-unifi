@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.firewall_group_update_request import FirewallGroupUpdateRequest
+from unifi_client.models.firewall_group_update_request import FirewallGroupUpdateRequest
 
 class TestFirewallGroupUpdateRequest(unittest.TestCase):
     """FirewallGroupUpdateRequest unit test stubs"""

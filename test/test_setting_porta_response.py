@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_porta_response import SettingPortaResponse
+from unifi_client.models.setting_porta_response import SettingPortaResponse
 
 class TestSettingPortaResponse(unittest.TestCase):
     """SettingPortaResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingPortaResponse(unittest.TestCase):
         if include_optional:
             return SettingPortaResponse(
                 data = [
-                    openapi_client.models.setting_porta.SettingPorta(
+                    unifi_client.models.setting_porta.SettingPorta(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingPortaResponse(unittest.TestCase):
                         site_id = '', 
                         ugw3_wan2_enabled = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

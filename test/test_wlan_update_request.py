@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_update_request import WLANUpdateRequest
+from unifi_client.models.wlan_update_request import WLANUpdateRequest
 
 class TestWLANUpdateRequest(unittest.TestCase):
     """WLANUpdateRequest unit test stubs"""
@@ -95,7 +95,7 @@ class TestWLANUpdateRequest(unittest.TestCase):
                 pmf_mode = '',
                 priority = '',
                 private_preshared_keys = [
-                    openapi_client.models.wlan_private_preshared_keys.WLANPrivatePresharedKeys(
+                    unifi_client.models.wlan_private_preshared_keys.WLANPrivatePresharedKeys(
                         networkconf_id = '', 
                         password = '', )
                     ],
@@ -113,7 +113,7 @@ class TestWLANUpdateRequest(unittest.TestCase):
                     56
                     ],
                 sae_psk = [
-                    openapi_client.models.wlan_sae_psk.WLANSaePsk(
+                    unifi_client.models.wlan_sae_psk.WLANSaePsk(
                         id = '', 
                         mac = '', 
                         psk = '', 
@@ -127,7 +127,7 @@ class TestWLANUpdateRequest(unittest.TestCase):
                 schedule_enabled = True,
                 schedule_reversed = True,
                 schedule_with_duration = [
-                    openapi_client.models.wlan_schedule_with_duration.WLANScheduleWithDuration(
+                    unifi_client.models.wlan_schedule_with_duration.WLANScheduleWithDuration(
                         duration_minutes = 56, 
                         name = '', 
                         start_days_of_week = [

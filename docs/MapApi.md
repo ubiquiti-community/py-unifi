@@ -1,4 +1,4 @@
-# openapi_client.MapApi
+# unifi_client.MapApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.map import Map
-from openapi_client.models.map_response import MapResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.map import Map
+from unifi_client.models.map_response import MapResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MapApi(api_client)
-    map = openapi_client.Map() # Map |  (optional)
+    api_instance = unifi_client.MapApi(api_client)
+    map = unifi_client.Map() # Map |  (optional)
 
     try:
-        api_response = api_instance.create_map(map=map)
+        api_response = await api_instance.create_map(map=map)
         print("The response of MapApi->create_map:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.map_response import MapResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.map_response import MapResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MapApi(api_client)
+    api_instance = unifi_client.MapApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_map(id)
+        api_response = await api_instance.delete_map(id)
         print("The response of MapApi->delete_map:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.map_response import MapResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.map_response import MapResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MapApi(api_client)
+    api_instance = unifi_client.MapApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_map(id)
+        api_response = await api_instance.get_map(id)
         print("The response of MapApi->get_map:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.map_response import MapResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.map_response import MapResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MapApi(api_client)
+    api_instance = unifi_client.MapApi(api_client)
 
     try:
-        api_response = api_instance.list_map()
+        api_response = await api_instance.list_map()
         print("The response of MapApi->list_map:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.map_response import MapResponse
-from openapi_client.models.map_update_request import MapUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.map_response import MapResponse
+from unifi_client.models.map_update_request import MapUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MapApi(api_client)
+    api_instance = unifi_client.MapApi(api_client)
     id = 'id_example' # str | 
-    map_update_request = openapi_client.MapUpdateRequest() # MapUpdateRequest |  (optional)
+    map_update_request = unifi_client.MapUpdateRequest() # MapUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_map(id, map_update_request=map_update_request)
+        api_response = await api_instance.update_map(id, map_update_request=map_update_request)
         print("The response of MapApi->update_map:\n")
         pprint(api_response)
     except Exception as e:

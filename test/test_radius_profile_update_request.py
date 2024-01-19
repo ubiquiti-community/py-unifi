@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.radius_profile_update_request import RADIUSProfileUpdateRequest
+from unifi_client.models.radius_profile_update_request import RADIUSProfileUpdateRequest
 
 class TestRADIUSProfileUpdateRequest(unittest.TestCase):
     """RADIUSProfileUpdateRequest unit test stubs"""
@@ -39,7 +39,7 @@ class TestRADIUSProfileUpdateRequest(unittest.TestCase):
                 id = '',
                 accounting_enabled = True,
                 acct_servers = [
-                    openapi_client.models.radius_profile_acct_servers.RADIUSProfileAcctServers(
+                    unifi_client.models.radius_profile_acct_servers.RADIUSProfileAcctServers(
                         ip = '', 
                         port = 56, 
                         x_secret = '', )
@@ -49,7 +49,7 @@ class TestRADIUSProfileUpdateRequest(unittest.TestCase):
                 attr_no_delete = True,
                 attr_no_edit = True,
                 auth_servers = [
-                    openapi_client.models.radius_profile_auth_servers.RADIUSProfileAuthServers(
+                    unifi_client.models.radius_profile_auth_servers.RADIUSProfileAuthServers(
                         ip = '', 
                         port = 56, 
                         x_secret = '', )

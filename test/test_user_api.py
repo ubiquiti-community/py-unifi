@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.user_api import UserApi
+from unifi_client.api.user_api import UserApi
 
 
 class TestUserApi(unittest.TestCase):

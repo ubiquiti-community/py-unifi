@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ether_lighting_speed_overrides import SettingEtherLightingSpeedOverrides
+from unifi_client.models.setting_ether_lighting_speed_overrides import SettingEtherLightingSpeedOverrides
 
 class TestSettingEtherLightingSpeedOverrides(unittest.TestCase):
     """SettingEtherLightingSpeedOverrides unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_events import SettingSuperEvents
+from unifi_client.models.setting_super_events import SettingSuperEvents
 
 class TestSettingSuperEvents(unittest.TestCase):
     """SettingSuperEvents unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
+from unifi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
 
 class TestSettingRsyslogdResponse(unittest.TestCase):
     """SettingRsyslogdResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingRsyslogdResponse(unittest.TestCase):
         if include_optional:
             return SettingRsyslogdResponse(
                 data = [
-                    openapi_client.models.setting_rsyslogd.SettingRsyslogd(
+                    unifi_client.models.setting_rsyslogd.SettingRsyslogd(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -55,7 +55,7 @@ class TestSettingRsyslogdResponse(unittest.TestCase):
                         this_controller = True, 
                         this_controller_encrypted_only = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

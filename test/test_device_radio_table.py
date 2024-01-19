@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_radio_table import DeviceRadioTable
+from unifi_client.models.device_radio_table import DeviceRadioTable
 
 class TestDeviceRadioTable(unittest.TestCase):
     """DeviceRadioTable unit test stubs"""
@@ -50,7 +50,7 @@ class TestDeviceRadioTable(unittest.TestCase):
                 name = '',
                 radio = '',
                 radio_identifiers = [
-                    openapi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
+                    unifi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
                         device_id = '', 
                         radio_name = '', )
                     ],

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_guest_access_api import SettingGuestAccessApi
+from unifi_client.api.setting_guest_access_api import SettingGuestAccessApi
 
 
 class TestSettingGuestAccessApi(unittest.TestCase):

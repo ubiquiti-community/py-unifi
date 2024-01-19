@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_usg_api import SettingUsgApi
+from unifi_client.api.setting_usg_api import SettingUsgApi
 
 
 class TestSettingUsgApi(unittest.TestCase):

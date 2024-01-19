@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_network_optimization_api import SettingNetworkOptimizationApi
+from unifi_client.api.setting_network_optimization_api import SettingNetworkOptimizationApi
 
 
 class TestSettingNetworkOptimizationApi(unittest.TestCase):

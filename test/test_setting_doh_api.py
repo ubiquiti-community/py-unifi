@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_doh_api import SettingDohApi
+from unifi_client.api.setting_doh_api import SettingDohApi
 
 
 class TestSettingDohApi(unittest.TestCase):

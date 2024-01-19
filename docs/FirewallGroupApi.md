@@ -1,4 +1,4 @@
-# openapi_client.FirewallGroupApi
+# unifi_client.FirewallGroupApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.firewall_group import FirewallGroup
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.firewall_group import FirewallGroup
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallGroupApi(api_client)
-    firewall_group = openapi_client.FirewallGroup() # FirewallGroup |  (optional)
+    api_instance = unifi_client.FirewallGroupApi(api_client)
+    firewall_group = unifi_client.FirewallGroup() # FirewallGroup |  (optional)
 
     try:
-        api_response = api_instance.create_firewall_group(firewall_group=firewall_group)
+        api_response = await api_instance.create_firewall_group(firewall_group=firewall_group)
         print("The response of FirewallGroupApi->create_firewall_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallGroupApi(api_client)
+    api_instance = unifi_client.FirewallGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_firewall_group(id)
+        api_response = await api_instance.delete_firewall_group(id)
         print("The response of FirewallGroupApi->delete_firewall_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallGroupApi(api_client)
+    api_instance = unifi_client.FirewallGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_firewall_group(id)
+        api_response = await api_instance.get_firewall_group(id)
         print("The response of FirewallGroupApi->get_firewall_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallGroupApi(api_client)
+    api_instance = unifi_client.FirewallGroupApi(api_client)
 
     try:
-        api_response = api_instance.list_firewall_group()
+        api_response = await api_instance.list_firewall_group()
         print("The response of FirewallGroupApi->list_firewall_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
-from openapi_client.models.firewall_group_update_request import FirewallGroupUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.models.firewall_group_update_request import FirewallGroupUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallGroupApi(api_client)
+    api_instance = unifi_client.FirewallGroupApi(api_client)
     id = 'id_example' # str | 
-    firewall_group_update_request = openapi_client.FirewallGroupUpdateRequest() # FirewallGroupUpdateRequest |  (optional)
+    firewall_group_update_request = unifi_client.FirewallGroupUpdateRequest() # FirewallGroupUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_firewall_group(id, firewall_group_update_request=firewall_group_update_request)
+        api_response = await api_instance.update_firewall_group(id, firewall_group_update_request=firewall_group_update_request)
         print("The response of FirewallGroupApi->update_firewall_group:\n")
         pprint(api_response)
     except Exception as e:

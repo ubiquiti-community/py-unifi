@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_usw_api import SettingUswApi
+from unifi_client.api.setting_usw_api import SettingUswApi
 
 
 class TestSettingUswApi(unittest.TestCase):

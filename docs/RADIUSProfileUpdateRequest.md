@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.radius_profile_update_request import RADIUSProfileUpdateRequest
+from unifi_client.models.radius_profile_update_request import RADIUSProfileUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

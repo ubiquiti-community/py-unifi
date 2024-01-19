@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ntp import SettingNtp
+from unifi_client.models.setting_ntp import SettingNtp
 
 class TestSettingNtp(unittest.TestCase):
     """SettingNtp unit test stubs"""

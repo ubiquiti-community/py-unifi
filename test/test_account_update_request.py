@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.account_update_request import AccountUpdateRequest
+from unifi_client.models.account_update_request import AccountUpdateRequest
 
 class TestAccountUpdateRequest(unittest.TestCase):
     """AccountUpdateRequest unit test stubs"""

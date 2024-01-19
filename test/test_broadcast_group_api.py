@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.broadcast_group_api import BroadcastGroupApi
+from unifi_client.api.broadcast_group_api import BroadcastGroupApi
 
 
 class TestBroadcastGroupApi(unittest.TestCase):

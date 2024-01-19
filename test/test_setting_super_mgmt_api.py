@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_mgmt_api import SettingSuperMgmtApi
+from unifi_client.api.setting_super_mgmt_api import SettingSuperMgmtApi
 
 
 class TestSettingSuperMgmtApi(unittest.TestCase):

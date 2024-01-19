@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_wandhcp_options import NetworkWANDHCPOptions
+from unifi_client.models.network_wandhcp_options import NetworkWANDHCPOptions
 
 # TODO update the JSON string below
 json = "{}"

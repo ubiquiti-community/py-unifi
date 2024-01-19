@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hotspot2_conf_capab import Hotspot2ConfCapab
+from unifi_client.models.hotspot2_conf_capab import Hotspot2ConfCapab
 
 # TODO update the JSON string below
 json = "{}"

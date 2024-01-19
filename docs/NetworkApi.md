@@ -1,4 +1,4 @@
-# openapi_client.NetworkApi
+# unifi_client.NetworkApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.network import Network
-from openapi_client.models.network_response import NetworkResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.network import Network
+from unifi_client.models.network_response import NetworkResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkApi(api_client)
-    network = openapi_client.Network() # Network |  (optional)
+    api_instance = unifi_client.NetworkApi(api_client)
+    network = unifi_client.Network() # Network |  (optional)
 
     try:
-        api_response = api_instance.create_network(network=network)
+        api_response = await api_instance.create_network(network=network)
         print("The response of NetworkApi->create_network:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.network_response import NetworkResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.network_response import NetworkResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkApi(api_client)
+    api_instance = unifi_client.NetworkApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_network(id)
+        api_response = await api_instance.delete_network(id)
         print("The response of NetworkApi->delete_network:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.network_response import NetworkResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.network_response import NetworkResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkApi(api_client)
+    api_instance = unifi_client.NetworkApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_network(id)
+        api_response = await api_instance.get_network(id)
         print("The response of NetworkApi->get_network:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.network_response import NetworkResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.network_response import NetworkResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkApi(api_client)
+    api_instance = unifi_client.NetworkApi(api_client)
 
     try:
-        api_response = api_instance.list_network()
+        api_response = await api_instance.list_network()
         print("The response of NetworkApi->list_network:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.network_response import NetworkResponse
-from openapi_client.models.network_update_request import NetworkUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.network_response import NetworkResponse
+from unifi_client.models.network_update_request import NetworkUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkApi(api_client)
+    api_instance = unifi_client.NetworkApi(api_client)
     id = 'id_example' # str | 
-    network_update_request = openapi_client.NetworkUpdateRequest() # NetworkUpdateRequest |  (optional)
+    network_update_request = unifi_client.NetworkUpdateRequest() # NetworkUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_network(id, network_update_request=network_update_request)
+        api_response = await api_instance.update_network(id, network_update_request=network_update_request)
         print("The response of NetworkApi->update_network:\n")
         pprint(api_response)
     except Exception as e:

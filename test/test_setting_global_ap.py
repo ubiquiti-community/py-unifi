@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_global_ap import SettingGlobalAp
+from unifi_client.models.setting_global_ap import SettingGlobalAp
 
 class TestSettingGlobalAp(unittest.TestCase):
     """SettingGlobalAp unit test stubs"""

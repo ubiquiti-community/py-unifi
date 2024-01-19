@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_snmp_response import SettingSnmpResponse
+from unifi_client.models.setting_snmp_response import SettingSnmpResponse
 
 class TestSettingSnmpResponse(unittest.TestCase):
     """SettingSnmpResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSnmpResponse(unittest.TestCase):
         if include_optional:
             return SettingSnmpResponse(
                 data = [
-                    openapi_client.models.setting_snmp.SettingSnmp(
+                    unifi_client.models.setting_snmp.SettingSnmp(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -51,7 +51,7 @@ class TestSettingSnmpResponse(unittest.TestCase):
                         username = '', 
                         x_password = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

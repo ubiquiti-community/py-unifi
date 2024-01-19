@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_venue_name import Hotspot2ConfVenueName
+from unifi_client.models.hotspot2_conf_venue_name import Hotspot2ConfVenueName
 
 class TestHotspot2ConfVenueName(unittest.TestCase):
     """Hotspot2ConfVenueName unit test stubs"""

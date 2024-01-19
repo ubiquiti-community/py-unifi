@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.schedule_task import ScheduleTask
+from unifi_client.models.schedule_task import ScheduleTask
 
 class TestScheduleTask(unittest.TestCase):
     """ScheduleTask unit test stubs"""
@@ -47,7 +47,7 @@ class TestScheduleTask(unittest.TestCase):
                 name = '',
                 site_id = '',
                 upgrade_targets = [
-                    openapi_client.models.schedule_task_upgrade_targets.ScheduleTaskUpgradeTargets(
+                    unifi_client.models.schedule_task_upgrade_targets.ScheduleTaskUpgradeTargets(
                         mac = '', )
                     ]
             )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_alerts import SettingIpsAlerts
+from unifi_client.models.setting_ips_alerts import SettingIpsAlerts
 
 class TestSettingIpsAlerts(unittest.TestCase):
     """SettingIpsAlerts unit test stubs"""
@@ -41,7 +41,7 @@ class TestSettingIpsAlerts(unittest.TestCase):
                 id = 56,
                 signature = '',
                 tracking = [
-                    openapi_client.models.setting_ips_tracking.SettingIpsTracking(
+                    unifi_client.models.setting_ips_tracking.SettingIpsTracking(
                         direction = '', 
                         mode = '', 
                         value = '', )

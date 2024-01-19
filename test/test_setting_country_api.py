@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_country_api import SettingCountryApi
+from unifi_client.api.setting_country_api import SettingCountryApi
 
 
 class TestSettingCountryApi(unittest.TestCase):

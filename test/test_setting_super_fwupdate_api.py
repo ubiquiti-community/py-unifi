@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_fwupdate_api import SettingSuperFwupdateApi
+from unifi_client.api.setting_super_fwupdate_api import SettingSuperFwupdateApi
 
 
 class TestSettingSuperFwupdateApi(unittest.TestCase):

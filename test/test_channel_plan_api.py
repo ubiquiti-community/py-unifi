@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.channel_plan_api import ChannelPlanApi
+from unifi_client.api.channel_plan_api import ChannelPlanApi
 
 
 class TestChannelPlanApi(unittest.TestCase):

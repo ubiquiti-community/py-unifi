@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.account_response import AccountResponse
+from unifi_client.models.account_response import AccountResponse
 
 class TestAccountResponse(unittest.TestCase):
     """AccountResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestAccountResponse(unittest.TestCase):
         if include_optional:
             return AccountResponse(
                 data = [
-                    openapi_client.models.account.Account(
+                    unifi_client.models.account.Account(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -53,7 +53,7 @@ class TestAccountResponse(unittest.TestCase):
                         vlan = 56, 
                         x_password = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

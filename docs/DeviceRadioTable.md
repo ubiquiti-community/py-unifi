@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_radio_table import DeviceRadioTable
+from unifi_client.models.device_radio_table import DeviceRadioTable
 
 # TODO update the JSON string below
 json = "{}"

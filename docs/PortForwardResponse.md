@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.models.port_forward_response import PortForwardResponse
 
 # TODO update the JSON string below
 json = "{}"

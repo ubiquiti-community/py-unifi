@@ -50,7 +50,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_port_overrides import DevicePortOverrides
+from unifi_client.models.device_port_overrides import DevicePortOverrides
 
 # TODO update the JSON string below
 json = "{}"

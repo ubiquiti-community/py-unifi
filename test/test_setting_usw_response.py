@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_usw_response import SettingUswResponse
+from unifi_client.models.setting_usw_response import SettingUswResponse
 
 class TestSettingUswResponse(unittest.TestCase):
     """SettingUswResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingUswResponse(unittest.TestCase):
         if include_optional:
             return SettingUswResponse(
                 data = [
-                    openapi_client.models.setting_usw.SettingUsw(
+                    unifi_client.models.setting_usw.SettingUsw(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingUswResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

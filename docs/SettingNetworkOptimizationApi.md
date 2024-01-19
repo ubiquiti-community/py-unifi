@@ -1,4 +1,4 @@
-# openapi_client.SettingNetworkOptimizationApi
+# unifi_client.SettingNetworkOptimizationApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingNetworkOptimizationApi(api_client)
+    api_instance = unifi_client.SettingNetworkOptimizationApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_network_optimization()
+        api_response = await api_instance.get_setting_network_optimization()
         print("The response of SettingNetworkOptimizationApi->get_setting_network_optimization:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_network_optimization import SettingNetworkOptimization
-from openapi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_network_optimization import SettingNetworkOptimization
+from unifi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingNetworkOptimizationApi(api_client)
-    setting_network_optimization = openapi_client.SettingNetworkOptimization() # SettingNetworkOptimization |  (optional)
+    api_instance = unifi_client.SettingNetworkOptimizationApi(api_client)
+    setting_network_optimization = unifi_client.SettingNetworkOptimization() # SettingNetworkOptimization |  (optional)
 
     try:
-        api_response = api_instance.update_setting_network_optimization(setting_network_optimization=setting_network_optimization)
+        api_response = await api_instance.update_setting_network_optimization(setting_network_optimization=setting_network_optimization)
         print("The response of SettingNetworkOptimizationApi->update_setting_network_optimization:\n")
         pprint(api_response)
     except Exception as e:

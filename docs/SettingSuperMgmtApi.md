@@ -1,4 +1,4 @@
-# openapi_client.SettingSuperMgmtApi
+# unifi_client.SettingSuperMgmtApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingSuperMgmtApi(api_client)
+    api_instance = unifi_client.SettingSuperMgmtApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_super_mgmt()
+        api_response = await api_instance.get_setting_super_mgmt()
         print("The response of SettingSuperMgmtApi->get_setting_super_mgmt:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_super_mgmt import SettingSuperMgmt
-from openapi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_super_mgmt import SettingSuperMgmt
+from unifi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingSuperMgmtApi(api_client)
-    setting_super_mgmt = openapi_client.SettingSuperMgmt() # SettingSuperMgmt |  (optional)
+    api_instance = unifi_client.SettingSuperMgmtApi(api_client)
+    setting_super_mgmt = unifi_client.SettingSuperMgmt() # SettingSuperMgmt |  (optional)
 
     try:
-        api_response = api_instance.update_setting_super_mgmt(setting_super_mgmt=setting_super_mgmt)
+        api_response = await api_instance.update_setting_super_mgmt(setting_super_mgmt=setting_super_mgmt)
         print("The response of SettingSuperMgmtApi->update_setting_super_mgmt:\n")
         pprint(api_response)
     except Exception as e:

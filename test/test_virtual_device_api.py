@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.virtual_device_api import VirtualDeviceApi
+from unifi_client.api.virtual_device_api import VirtualDeviceApi
 
 
 class TestVirtualDeviceApi(unittest.TestCase):

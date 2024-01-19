@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_element_adopt_api import SettingElementAdoptApi
+from unifi_client.api.setting_element_adopt_api import SettingElementAdoptApi
 
 
 class TestSettingElementAdoptApi(unittest.TestCase):

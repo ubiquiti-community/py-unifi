@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.spatial_record_update_request import SpatialRecordUpdateRequest
+from unifi_client.models.spatial_record_update_request import SpatialRecordUpdateRequest
 
 class TestSpatialRecordUpdateRequest(unittest.TestCase):
     """SpatialRecordUpdateRequest unit test stubs"""
@@ -42,9 +42,9 @@ class TestSpatialRecordUpdateRequest(unittest.TestCase):
                 attr_no_delete = True,
                 attr_no_edit = True,
                 devices = [
-                    openapi_client.models.spatial_record_devices.SpatialRecordDevices(
+                    unifi_client.models.spatial_record_devices.SpatialRecordDevices(
                         mac = '', 
-                        position = openapi_client.models.spatial_record_position.SpatialRecordPosition(
+                        position = unifi_client.models.spatial_record_position.SpatialRecordPosition(
                             x = 1.337, 
                             y = 1.337, 
                             z = 1.337, ), )

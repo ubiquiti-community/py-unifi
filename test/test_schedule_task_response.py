@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
 
 class TestScheduleTaskResponse(unittest.TestCase):
     """ScheduleTaskResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestScheduleTaskResponse(unittest.TestCase):
         if include_optional:
             return ScheduleTaskResponse(
                 data = [
-                    openapi_client.models.schedule_task.ScheduleTask(
+                    unifi_client.models.schedule_task.ScheduleTask(
                         _id = '', 
                         action = '', 
                         attr_hidden = True, 
@@ -49,11 +49,11 @@ class TestScheduleTaskResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', 
                         upgrade_targets = [
-                            openapi_client.models.schedule_task_upgrade_targets.ScheduleTaskUpgradeTargets(
+                            unifi_client.models.schedule_task_upgrade_targets.ScheduleTaskUpgradeTargets(
                                 mac = '', )
                             ], )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

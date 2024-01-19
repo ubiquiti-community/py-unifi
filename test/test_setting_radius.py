@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_radius import SettingRadius
+from unifi_client.models.setting_radius import SettingRadius
 
 class TestSettingRadius(unittest.TestCase):
     """SettingRadius unit test stubs"""

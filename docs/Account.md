@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.account import Account
+from unifi_client.models.account import Account
 
 # TODO update the JSON string below
 json = "{}"

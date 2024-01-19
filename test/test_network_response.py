@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.network_response import NetworkResponse
+from unifi_client.models.network_response import NetworkResponse
 
 class TestNetworkResponse(unittest.TestCase):
     """NetworkResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestNetworkResponse(unittest.TestCase):
         if include_optional:
             return NetworkResponse(
                 data = [
-                    openapi_client.models.network.Network(
+                    unifi_client.models.network.Network(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -156,7 +156,7 @@ class TestNetworkResponse(unittest.TestCase):
                         mdns_enabled = True, 
                         name = '', 
                         nat_outbound_ip_addresses = [
-                            openapi_client.models.network_nat_outbound_ip_addresses.NetworkNATOutboundIPAddresses(
+                            unifi_client.models.network_nat_outbound_ip_addresses.NetworkNATOutboundIPAddresses(
                                 ip_address = '', 
                                 wan_network_group = '', )
                             ], 
@@ -224,7 +224,7 @@ class TestNetworkResponse(unittest.TestCase):
                         vrrp_vrid = 56, 
                         wan_dhcp_cos = 56, 
                         wan_dhcp_options = [
-                            openapi_client.models.network_wandhcp_options.NetworkWANDHCPOptions(
+                            unifi_client.models.network_wandhcp_options.NetworkWANDHCPOptions(
                                 option_number = 56, 
                                 value = '', )
                             ], 
@@ -253,7 +253,7 @@ class TestNetworkResponse(unittest.TestCase):
                         wan_pppoe_password_enabled = True, 
                         wan_pppoe_username_enabled = True, 
                         wan_prefixlen = 56, 
-                        wan_provider_capabilities = openapi_client.models.network_wan_provider_capabilities.NetworkWANProviderCapabilities(
+                        wan_provider_capabilities = unifi_client.models.network_wan_provider_capabilities.NetworkWANProviderCapabilities(
                             download_kilobits_per_second = 56, 
                             upload_kilobits_per_second = 56, ), 
                         wan_smartq_down_rate = 56, 
@@ -290,7 +290,7 @@ class TestNetworkResponse(unittest.TestCase):
                         x_wan_password = '', 
                         x_wireguard_private_key = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

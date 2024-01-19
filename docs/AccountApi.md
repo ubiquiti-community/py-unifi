@@ -1,4 +1,4 @@
-# openapi_client.AccountApi
+# unifi_client.AccountApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.account import Account
-from openapi_client.models.account_response import AccountResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.account import Account
+from unifi_client.models.account_response import AccountResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AccountApi(api_client)
-    account = openapi_client.Account() # Account |  (optional)
+    api_instance = unifi_client.AccountApi(api_client)
+    account = unifi_client.Account() # Account |  (optional)
 
     try:
-        api_response = api_instance.create_account(account=account)
+        api_response = await api_instance.create_account(account=account)
         print("The response of AccountApi->create_account:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.account_response import AccountResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.account_response import AccountResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AccountApi(api_client)
+    api_instance = unifi_client.AccountApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_account(id)
+        api_response = await api_instance.delete_account(id)
         print("The response of AccountApi->delete_account:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.account_response import AccountResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.account_response import AccountResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AccountApi(api_client)
+    api_instance = unifi_client.AccountApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_account(id)
+        api_response = await api_instance.get_account(id)
         print("The response of AccountApi->get_account:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.account_response import AccountResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.account_response import AccountResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AccountApi(api_client)
+    api_instance = unifi_client.AccountApi(api_client)
 
     try:
-        api_response = api_instance.list_account()
+        api_response = await api_instance.list_account()
         print("The response of AccountApi->list_account:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.account_response import AccountResponse
-from openapi_client.models.account_update_request import AccountUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.account_response import AccountResponse
+from unifi_client.models.account_update_request import AccountUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AccountApi(api_client)
+    api_instance = unifi_client.AccountApi(api_client)
     id = 'id_example' # str | 
-    account_update_request = openapi_client.AccountUpdateRequest() # AccountUpdateRequest |  (optional)
+    account_update_request = unifi_client.AccountUpdateRequest() # AccountUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_account(id, account_update_request=account_update_request)
+        api_response = await api_instance.update_account(id, account_update_request=account_update_request)
         print("The response of AccountApi->update_account:\n")
         pprint(api_response)
     except Exception as e:

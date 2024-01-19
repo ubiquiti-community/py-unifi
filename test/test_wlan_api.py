@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.wlan_api import WLANApi
+from unifi_client.api.wlan_api import WLANApi
 
 
 class TestWLANApi(unittest.TestCase):

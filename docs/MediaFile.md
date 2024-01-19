@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.media_file import MediaFile
+from unifi_client.models.media_file import MediaFile
 
 # TODO update the JSON string below
 json = "{}"

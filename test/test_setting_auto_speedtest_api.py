@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_auto_speedtest_api import SettingAutoSpeedtestApi
+from unifi_client.api.setting_auto_speedtest_api import SettingAutoSpeedtestApi
 
 
 class TestSettingAutoSpeedtestApi(unittest.TestCase):

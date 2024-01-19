@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tag import Tag
+from unifi_client.models.tag import Tag
 
 class TestTag(unittest.TestCase):
     """Tag unit test stubs"""

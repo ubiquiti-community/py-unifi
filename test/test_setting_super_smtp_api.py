@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_smtp_api import SettingSuperSmtpApi
+from unifi_client.api.setting_super_smtp_api import SettingSuperSmtpApi
 
 
 class TestSettingSuperSmtpApi(unittest.TestCase):

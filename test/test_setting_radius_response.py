@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_radius_response import SettingRadiusResponse
+from unifi_client.models.setting_radius_response import SettingRadiusResponse
 
 class TestSettingRadiusResponse(unittest.TestCase):
     """SettingRadiusResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingRadiusResponse(unittest.TestCase):
         if include_optional:
             return SettingRadiusResponse(
                 data = [
-                    openapi_client.models.setting_radius.SettingRadius(
+                    unifi_client.models.setting_radius.SettingRadius(
                         _id = '', 
                         accounting_enabled = True, 
                         acct_port = 56, 
@@ -54,7 +54,7 @@ class TestSettingRadiusResponse(unittest.TestCase):
                         tunneled_reply = True, 
                         x_secret = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

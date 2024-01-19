@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.network_update_request import NetworkUpdateRequest
+from unifi_client.models.network_update_request import NetworkUpdateRequest
 
 class TestNetworkUpdateRequest(unittest.TestCase):
     """NetworkUpdateRequest unit test stubs"""
@@ -154,7 +154,7 @@ class TestNetworkUpdateRequest(unittest.TestCase):
                 mdns_enabled = True,
                 name = '',
                 nat_outbound_ip_addresses = [
-                    openapi_client.models.network_nat_outbound_ip_addresses.NetworkNATOutboundIPAddresses(
+                    unifi_client.models.network_nat_outbound_ip_addresses.NetworkNATOutboundIPAddresses(
                         ip_address = '', 
                         wan_network_group = '', )
                     ],
@@ -222,7 +222,7 @@ class TestNetworkUpdateRequest(unittest.TestCase):
                 vrrp_vrid = 56,
                 wan_dhcp_cos = 56,
                 wan_dhcp_options = [
-                    openapi_client.models.network_wandhcp_options.NetworkWANDHCPOptions(
+                    unifi_client.models.network_wandhcp_options.NetworkWANDHCPOptions(
                         option_number = 56, 
                         value = '', )
                     ],
@@ -251,7 +251,7 @@ class TestNetworkUpdateRequest(unittest.TestCase):
                 wan_pppoe_password_enabled = True,
                 wan_pppoe_username_enabled = True,
                 wan_prefixlen = 56,
-                wan_provider_capabilities = openapi_client.models.network_wan_provider_capabilities.NetworkWANProviderCapabilities(
+                wan_provider_capabilities = unifi_client.models.network_wan_provider_capabilities.NetworkWANProviderCapabilities(
                     download_kilobits_per_second = 56, 
                     upload_kilobits_per_second = 56, ),
                 wan_smartq_down_rate = 56,

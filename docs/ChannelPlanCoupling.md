@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.channel_plan_coupling import ChannelPlanCoupling
+from unifi_client.models.channel_plan_coupling import ChannelPlanCoupling
 
 # TODO update the JSON string below
 json = "{}"

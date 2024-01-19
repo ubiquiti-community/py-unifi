@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_country import SettingCountry
+from unifi_client.models.setting_country import SettingCountry
 
 class TestSettingCountry(unittest.TestCase):
     """SettingCountry unit test stubs"""

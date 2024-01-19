@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_baresip_api import SettingBaresipApi
+from unifi_client.api.setting_baresip_api import SettingBaresipApi
 
 
 class TestSettingBaresipApi(unittest.TestCase):

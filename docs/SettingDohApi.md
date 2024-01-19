@@ -1,4 +1,4 @@
-# openapi_client.SettingDohApi
+# unifi_client.SettingDohApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_doh_response import SettingDohResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_doh_response import SettingDohResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingDohApi(api_client)
+    api_instance = unifi_client.SettingDohApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_doh()
+        api_response = await api_instance.get_setting_doh()
         print("The response of SettingDohApi->get_setting_doh:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_doh import SettingDoh
-from openapi_client.models.setting_doh_response import SettingDohResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_doh import SettingDoh
+from unifi_client.models.setting_doh_response import SettingDohResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingDohApi(api_client)
-    setting_doh = openapi_client.SettingDoh() # SettingDoh |  (optional)
+    api_instance = unifi_client.SettingDohApi(api_client)
+    setting_doh = unifi_client.SettingDoh() # SettingDoh |  (optional)
 
     try:
-        api_response = api_instance.update_setting_doh(setting_doh=setting_doh)
+        api_response = await api_instance.update_setting_doh(setting_doh=setting_doh)
         print("The response of SettingDohApi->update_setting_doh:\n")
         pprint(api_response)
     except Exception as e:

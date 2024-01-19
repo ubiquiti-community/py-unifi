@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.user_group_response import UserGroupResponse
+from unifi_client.models.user_group_response import UserGroupResponse
 
 class TestUserGroupResponse(unittest.TestCase):
     """UserGroupResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestUserGroupResponse(unittest.TestCase):
         if include_optional:
             return UserGroupResponse(
                 data = [
-                    openapi_client.models.user_group.UserGroup(
+                    unifi_client.models.user_group.UserGroup(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -48,7 +48,7 @@ class TestUserGroupResponse(unittest.TestCase):
                         qos_rate_max_up = 56, 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

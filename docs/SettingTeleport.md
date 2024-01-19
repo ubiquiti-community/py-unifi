@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_teleport import SettingTeleport
+from unifi_client.models.setting_teleport import SettingTeleport
 
 # TODO update the JSON string below
 json = "{}"

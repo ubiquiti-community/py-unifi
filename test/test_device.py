@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device import Device
+from unifi_client.models.device import Device
 
 class TestDevice(unittest.TestCase):
     """Device unit test stubs"""
@@ -47,7 +47,7 @@ class TestDevice(unittest.TestCase):
                 baresip_auth_user = '',
                 baresip_enabled = True,
                 baresip_extension = '',
-                config_network = openapi_client.models.device_config_network.DeviceConfigNetwork(
+                config_network = unifi_client.models.device_config_network.DeviceConfigNetwork(
                     bonding_enabled = True, 
                     dns1 = '', 
                     dns2 = '', 
@@ -57,18 +57,18 @@ class TestDevice(unittest.TestCase):
                     netmask = '', 
                     type = '', ),
                 connected_battery_overrides = [
-                    openapi_client.models.device_connected_battery_overrides.DeviceConnectedBatteryOverrides(
+                    unifi_client.models.device_connected_battery_overrides.DeviceConnectedBatteryOverrides(
                         mac = '', )
                     ],
                 disabled = True,
                 dot1x_fallback_networkconf_id = '',
                 dot1x_portctrl_enabled = True,
                 dpi_enabled = True,
-                ether_lighting = openapi_client.models.device_ether_lighting.DeviceEtherLighting(
+                ether_lighting = unifi_client.models.device_ether_lighting.DeviceEtherLighting(
                     brightness = 56, 
                     mode = '', ),
                 ethernet_overrides = [
-                    openapi_client.models.device_ethernet_overrides.DeviceEthernetOverrides(
+                    unifi_client.models.device_ethernet_overrides.DeviceEthernetOverrides(
                         ifname = '', 
                         networkgroup = '', )
                     ],
@@ -113,7 +113,7 @@ class TestDevice(unittest.TestCase):
                 outdoor_mode_override = '',
                 outlet_enabled = True,
                 outlet_overrides = [
-                    openapi_client.models.device_outlet_overrides.DeviceOutletOverrides(
+                    unifi_client.models.device_outlet_overrides.DeviceOutletOverrides(
                         cycle_enabled = True, 
                         index = 56, 
                         name = '', 
@@ -121,7 +121,7 @@ class TestDevice(unittest.TestCase):
                     ],
                 outlet_power_cycle_enabled = True,
                 port_overrides = [
-                    openapi_client.models.device_port_overrides.DevicePortOverrides(
+                    unifi_client.models.device_port_overrides.DevicePortOverrides(
                         aggregate_num_ports = 56, 
                         autoneg = True, 
                         dot1x_ctrl = '', 
@@ -172,7 +172,7 @@ class TestDevice(unittest.TestCase):
                 power_source_ctrl_budget = 56,
                 power_source_ctrl_enabled = True,
                 radio_table = [
-                    openapi_client.models.device_radio_table.DeviceRadioTable(
+                    unifi_client.models.device_radio_table.DeviceRadioTable(
                         antenna_gain = 56, 
                         antenna_id = 56, 
                         backup_channel = '', 
@@ -187,7 +187,7 @@ class TestDevice(unittest.TestCase):
                         name = '', 
                         radio = '', 
                         radio_identifiers = [
-                            openapi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
+                            unifi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
                                 device_id = '', 
                                 radio_name = '', )
                             ], 
@@ -199,10 +199,10 @@ class TestDevice(unittest.TestCase):
                     ],
                 radiusprofile_id = '',
                 resetbtn_enabled = '',
-                rps_override = openapi_client.models.device_rps_override.DeviceRpsOverride(
+                rps_override = unifi_client.models.device_rps_override.DeviceRpsOverride(
                     power_management_mode = '', 
                     rps_port_table = [
-                        openapi_client.models.device_rps_port_table.DeviceRpsPortTable(
+                        unifi_client.models.device_rps_port_table.DeviceRpsPortTable(
                             name = '', 
                             port_idx = 56, 
                             port_mode = '', )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_auto_speedtest import SettingAutoSpeedtest
+from unifi_client.models.setting_auto_speedtest import SettingAutoSpeedtest
 
 class TestSettingAutoSpeedtest(unittest.TestCase):
     """SettingAutoSpeedtest unit test stubs"""

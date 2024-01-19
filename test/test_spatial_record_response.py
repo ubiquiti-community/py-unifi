@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
 
 class TestSpatialRecordResponse(unittest.TestCase):
     """SpatialRecordResponse unit test stubs"""
@@ -37,16 +37,16 @@ class TestSpatialRecordResponse(unittest.TestCase):
         if include_optional:
             return SpatialRecordResponse(
                 data = [
-                    openapi_client.models.spatial_record.SpatialRecord(
+                    unifi_client.models.spatial_record.SpatialRecord(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
                         attr_no_delete = True, 
                         attr_no_edit = True, 
                         devices = [
-                            openapi_client.models.spatial_record_devices.SpatialRecordDevices(
+                            unifi_client.models.spatial_record_devices.SpatialRecordDevices(
                                 mac = '', 
-                                position = openapi_client.models.spatial_record_position.SpatialRecordPosition(
+                                position = unifi_client.models.spatial_record_position.SpatialRecordPosition(
                                     x = 1.337, 
                                     y = 1.337, 
                                     z = 1.337, ), )
@@ -54,7 +54,7 @@ class TestSpatialRecordResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

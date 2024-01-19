@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_ethernet_overrides import DeviceEthernetOverrides
+from unifi_client.models.device_ethernet_overrides import DeviceEthernetOverrides
 
 class TestDeviceEthernetOverrides(unittest.TestCase):
     """DeviceEthernetOverrides unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_snmp import SettingSnmp
+from unifi_client.models.setting_snmp import SettingSnmp
 
 class TestSettingSnmp(unittest.TestCase):
     """SettingSnmp unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_config_network import DeviceConfigNetwork
+from unifi_client.models.device_config_network import DeviceConfigNetwork
 
 class TestDeviceConfigNetwork(unittest.TestCase):
     """DeviceConfigNetwork unit test stubs"""

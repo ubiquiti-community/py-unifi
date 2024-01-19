@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_nai_realm_list import Hotspot2ConfNaiRealmList
+from unifi_client.models.hotspot2_conf_nai_realm_list import Hotspot2ConfNaiRealmList
 
 class TestHotspot2ConfNaiRealmList(unittest.TestCase):
     """Hotspot2ConfNaiRealmList unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_identity_response import SettingSuperIdentityResponse
+from unifi_client.models.setting_super_identity_response import SettingSuperIdentityResponse
 
 class TestSettingSuperIdentityResponse(unittest.TestCase):
     """SettingSuperIdentityResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperIdentityResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperIdentityResponse(
                 data = [
-                    openapi_client.models.setting_super_identity.SettingSuperIdentity(
+                    unifi_client.models.setting_super_identity.SettingSuperIdentity(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -48,7 +48,7 @@ class TestSettingSuperIdentityResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_response import WLANResponse
+from unifi_client.models.wlan_response import WLANResponse
 
 class TestWLANResponse(unittest.TestCase):
     """WLANResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestWLANResponse(unittest.TestCase):
         if include_optional:
             return WLANResponse(
                 data = [
-                    openapi_client.models.wlan.WLAN(
+                    unifi_client.models.wlan.WLAN(
                         _id = '', 
                         ap_group_ids = [
                             ''
@@ -97,7 +97,7 @@ class TestWLANResponse(unittest.TestCase):
                         pmf_mode = '', 
                         priority = '', 
                         private_preshared_keys = [
-                            openapi_client.models.wlan_private_preshared_keys.WLANPrivatePresharedKeys(
+                            unifi_client.models.wlan_private_preshared_keys.WLANPrivatePresharedKeys(
                                 networkconf_id = '', 
                                 password = '', )
                             ], 
@@ -115,7 +115,7 @@ class TestWLANResponse(unittest.TestCase):
                             56
                             ], 
                         sae_psk = [
-                            openapi_client.models.wlan_sae_psk.WLANSaePsk(
+                            unifi_client.models.wlan_sae_psk.WLANSaePsk(
                                 id = '', 
                                 mac = '', 
                                 psk = '', 
@@ -129,7 +129,7 @@ class TestWLANResponse(unittest.TestCase):
                         schedule_enabled = True, 
                         schedule_reversed = True, 
                         schedule_with_duration = [
-                            openapi_client.models.wlan_schedule_with_duration.WLANScheduleWithDuration(
+                            unifi_client.models.wlan_schedule_with_duration.WLANScheduleWithDuration(
                                 duration_minutes = 56, 
                                 name = '', 
                                 start_days_of_week = [
@@ -164,7 +164,7 @@ class TestWLANResponse(unittest.TestCase):
                         x_passphrase = '', 
                         x_wep = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

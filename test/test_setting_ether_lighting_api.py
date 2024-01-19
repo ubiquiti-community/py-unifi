@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_ether_lighting_api import SettingEtherLightingApi
+from unifi_client.api.setting_ether_lighting_api import SettingEtherLightingApi
 
 
 class TestSettingEtherLightingApi(unittest.TestCase):

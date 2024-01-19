@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.get_setting_auto_speedtest_default_response import GetSettingAutoSpeedtestDefaultResponse
+from unifi_client.models.get_setting_auto_speedtest_default_response import GetSettingAutoSpeedtestDefaultResponse
 
 # TODO update the JSON string below
 json = "{}"

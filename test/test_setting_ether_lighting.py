@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ether_lighting import SettingEtherLighting
+from unifi_client.models.setting_ether_lighting import SettingEtherLighting
 
 class TestSettingEtherLighting(unittest.TestCase):
     """SettingEtherLighting unit test stubs"""
@@ -43,13 +43,13 @@ class TestSettingEtherLighting(unittest.TestCase):
                 attr_no_edit = True,
                 key = '',
                 network_overrides = [
-                    openapi_client.models.setting_ether_lighting_network_overrides.SettingEtherLightingNetworkOverrides(
+                    unifi_client.models.setting_ether_lighting_network_overrides.SettingEtherLightingNetworkOverrides(
                         key = '', 
                         raw_color_hex = '', )
                     ],
                 site_id = '',
                 speed_overrides = [
-                    openapi_client.models.setting_ether_lighting_speed_overrides.SettingEtherLightingSpeedOverrides(
+                    unifi_client.models.setting_ether_lighting_speed_overrides.SettingEtherLightingSpeedOverrides(
                         key = '', 
                         raw_color_hex = '', )
                     ]

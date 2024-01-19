@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.channel_plan_site_blacklisted_channels import ChannelPlanSiteBlacklistedChannels
+from unifi_client.models.channel_plan_site_blacklisted_channels import ChannelPlanSiteBlacklistedChannels
 
 # TODO update the JSON string below
 json = "{}"

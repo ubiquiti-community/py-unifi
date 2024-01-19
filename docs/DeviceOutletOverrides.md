@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_outlet_overrides import DeviceOutletOverrides
+from unifi_client.models.device_outlet_overrides import DeviceOutletOverrides
 
 # TODO update the JSON string below
 json = "{}"

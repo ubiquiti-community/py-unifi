@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_lcm_response import SettingLcmResponse
+from unifi_client.models.setting_lcm_response import SettingLcmResponse
 
 class TestSettingLcmResponse(unittest.TestCase):
     """SettingLcmResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingLcmResponse(unittest.TestCase):
         if include_optional:
             return SettingLcmResponse(
                 data = [
-                    openapi_client.models.setting_lcm.SettingLcm(
+                    unifi_client.models.setting_lcm.SettingLcm(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -51,7 +51,7 @@ class TestSettingLcmResponse(unittest.TestCase):
                         sync = True, 
                         touch_event = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

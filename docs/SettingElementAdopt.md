@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_element_adopt import SettingElementAdopt
+from unifi_client.models.setting_element_adopt import SettingElementAdopt
 
 # TODO update the JSON string below
 json = "{}"

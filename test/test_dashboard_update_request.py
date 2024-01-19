@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dashboard_update_request import DashboardUpdateRequest
+from unifi_client.models.dashboard_update_request import DashboardUpdateRequest
 
 class TestDashboardUpdateRequest(unittest.TestCase):
     """DashboardUpdateRequest unit test stubs"""
@@ -45,7 +45,7 @@ class TestDashboardUpdateRequest(unittest.TestCase):
                 desc = '',
                 is_public = True,
                 modules = [
-                    openapi_client.models.dashboard_modules.DashboardModules(
+                    unifi_client.models.dashboard_modules.DashboardModules(
                         config = '', 
                         id = '', 
                         module_id = '', 

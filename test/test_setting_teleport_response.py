@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_teleport_response import SettingTeleportResponse
+from unifi_client.models.setting_teleport_response import SettingTeleportResponse
 
 class TestSettingTeleportResponse(unittest.TestCase):
     """SettingTeleportResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingTeleportResponse(unittest.TestCase):
         if include_optional:
             return SettingTeleportResponse(
                 data = [
-                    openapi_client.models.setting_teleport.SettingTeleport(
+                    unifi_client.models.setting_teleport.SettingTeleport(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -48,7 +48,7 @@ class TestSettingTeleportResponse(unittest.TestCase):
                         site_id = '', 
                         subnet_cidr = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -1,4 +1,4 @@
-# openapi_client.UserGroupApi
+# unifi_client.UserGroupApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.user_group import UserGroup
-from openapi_client.models.user_group_response import UserGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.user_group import UserGroup
+from unifi_client.models.user_group_response import UserGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserGroupApi(api_client)
-    user_group = openapi_client.UserGroup() # UserGroup |  (optional)
+    api_instance = unifi_client.UserGroupApi(api_client)
+    user_group = unifi_client.UserGroup() # UserGroup |  (optional)
 
     try:
-        api_response = api_instance.create_user_group(user_group=user_group)
+        api_response = await api_instance.create_user_group(user_group=user_group)
         print("The response of UserGroupApi->create_user_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.user_group_response import UserGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.user_group_response import UserGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserGroupApi(api_client)
+    api_instance = unifi_client.UserGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_user_group(id)
+        api_response = await api_instance.delete_user_group(id)
         print("The response of UserGroupApi->delete_user_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.user_group_response import UserGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.user_group_response import UserGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserGroupApi(api_client)
+    api_instance = unifi_client.UserGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_user_group(id)
+        api_response = await api_instance.get_user_group(id)
         print("The response of UserGroupApi->get_user_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.user_group_response import UserGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.user_group_response import UserGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserGroupApi(api_client)
+    api_instance = unifi_client.UserGroupApi(api_client)
 
     try:
-        api_response = api_instance.list_user_group()
+        api_response = await api_instance.list_user_group()
         print("The response of UserGroupApi->list_user_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.user_group_response import UserGroupResponse
-from openapi_client.models.user_group_update_request import UserGroupUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.user_group_response import UserGroupResponse
+from unifi_client.models.user_group_update_request import UserGroupUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserGroupApi(api_client)
+    api_instance = unifi_client.UserGroupApi(api_client)
     id = 'id_example' # str | 
-    user_group_update_request = openapi_client.UserGroupUpdateRequest() # UserGroupUpdateRequest |  (optional)
+    user_group_update_request = unifi_client.UserGroupUpdateRequest() # UserGroupUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_user_group(id, user_group_update_request=user_group_update_request)
+        api_response = await api_instance.update_user_group(id, user_group_update_request=user_group_update_request)
         print("The response of UserGroupApi->update_user_group:\n")
         pprint(api_response)
     except Exception as e:

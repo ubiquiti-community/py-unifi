@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.dpi_group_api import DpiGroupApi
+from unifi_client.api.dpi_group_api import DpiGroupApi
 
 
 class TestDpiGroupApi(unittest.TestCase):

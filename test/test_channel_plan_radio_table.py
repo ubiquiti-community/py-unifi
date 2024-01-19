@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_plan_radio_table import ChannelPlanRadioTable
+from unifi_client.models.channel_plan_radio_table import ChannelPlanRadioTable
 
 class TestChannelPlanRadioTable(unittest.TestCase):
     """ChannelPlanRadioTable unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.port_forward_api import PortForwardApi
+from unifi_client.api.port_forward_api import PortForwardApi
 
 
 class TestPortForwardApi(unittest.TestCase):

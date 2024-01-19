@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_connected_battery_overrides import DeviceConnectedBatteryOverrides
+from unifi_client.models.device_connected_battery_overrides import DeviceConnectedBatteryOverrides
 
 class TestDeviceConnectedBatteryOverrides(unittest.TestCase):
     """DeviceConnectedBatteryOverrides unit test stubs"""

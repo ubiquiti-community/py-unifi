@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot_package import HotspotPackage
+from unifi_client.models.hotspot_package import HotspotPackage
 
 class TestHotspotPackage(unittest.TestCase):
     """HotspotPackage unit test stubs"""

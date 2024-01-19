@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_fwupdate_response import SettingSuperFwupdateResponse
+from unifi_client.models.setting_super_fwupdate_response import SettingSuperFwupdateResponse
 
 class TestSettingSuperFwupdateResponse(unittest.TestCase):
     """SettingSuperFwupdateResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperFwupdateResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperFwupdateResponse(
                 data = [
-                    openapi_client.models.setting_super_fwupdate.SettingSuperFwupdate(
+                    unifi_client.models.setting_super_fwupdate.SettingSuperFwupdate(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -49,7 +49,7 @@ class TestSettingSuperFwupdateResponse(unittest.TestCase):
                         site_id = '', 
                         sso_enabled = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

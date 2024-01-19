@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_radius_api import SettingRadiusApi
+from unifi_client.api.setting_radius_api import SettingRadiusApi
 
 
 class TestSettingRadiusApi(unittest.TestCase):

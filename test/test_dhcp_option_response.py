@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dhcp_option_response import DHCPOptionResponse
+from unifi_client.models.dhcp_option_response import DHCPOptionResponse
 
 class TestDHCPOptionResponse(unittest.TestCase):
     """DHCPOptionResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDHCPOptionResponse(unittest.TestCase):
         if include_optional:
             return DHCPOptionResponse(
                 data = [
-                    openapi_client.models.dhcp_option.DHCPOption(
+                    unifi_client.models.dhcp_option.DHCPOption(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -50,7 +50,7 @@ class TestDHCPOptionResponse(unittest.TestCase):
                         type = '', 
                         width = 56, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

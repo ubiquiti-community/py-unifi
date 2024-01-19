@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_ntp_api import SettingNtpApi
+from unifi_client.api.setting_ntp_api import SettingNtpApi
 
 
 class TestSettingNtpApi(unittest.TestCase):

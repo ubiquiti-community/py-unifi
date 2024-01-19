@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.spatial_record_position import SpatialRecordPosition
+from unifi_client.models.spatial_record_position import SpatialRecordPosition
 
 # TODO update the JSON string below
 json = "{}"

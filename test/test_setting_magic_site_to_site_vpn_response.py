@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_magic_site_to_site_vpn_response import SettingMagicSiteToSiteVpnResponse
+from unifi_client.models.setting_magic_site_to_site_vpn_response import SettingMagicSiteToSiteVpnResponse
 
 class TestSettingMagicSiteToSiteVpnResponse(unittest.TestCase):
     """SettingMagicSiteToSiteVpnResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingMagicSiteToSiteVpnResponse(unittest.TestCase):
         if include_optional:
             return SettingMagicSiteToSiteVpnResponse(
                 data = [
-                    openapi_client.models.setting_magic_site_to_site_vpn.SettingMagicSiteToSiteVpn(
+                    unifi_client.models.setting_magic_site_to_site_vpn.SettingMagicSiteToSiteVpn(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingMagicSiteToSiteVpnResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

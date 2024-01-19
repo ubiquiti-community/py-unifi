@@ -1,4 +1,4 @@
-# openapi_client.BroadcastGroupApi
+# unifi_client.BroadcastGroupApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.broadcast_group import BroadcastGroup
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.broadcast_group import BroadcastGroup
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.BroadcastGroupApi(api_client)
-    broadcast_group = openapi_client.BroadcastGroup() # BroadcastGroup |  (optional)
+    api_instance = unifi_client.BroadcastGroupApi(api_client)
+    broadcast_group = unifi_client.BroadcastGroup() # BroadcastGroup |  (optional)
 
     try:
-        api_response = api_instance.create_broadcast_group(broadcast_group=broadcast_group)
+        api_response = await api_instance.create_broadcast_group(broadcast_group=broadcast_group)
         print("The response of BroadcastGroupApi->create_broadcast_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.BroadcastGroupApi(api_client)
+    api_instance = unifi_client.BroadcastGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_broadcast_group(id)
+        api_response = await api_instance.delete_broadcast_group(id)
         print("The response of BroadcastGroupApi->delete_broadcast_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.BroadcastGroupApi(api_client)
+    api_instance = unifi_client.BroadcastGroupApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_broadcast_group(id)
+        api_response = await api_instance.get_broadcast_group(id)
         print("The response of BroadcastGroupApi->get_broadcast_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.BroadcastGroupApi(api_client)
+    api_instance = unifi_client.BroadcastGroupApi(api_client)
 
     try:
-        api_response = api_instance.list_broadcast_group()
+        api_response = await api_instance.list_broadcast_group()
         print("The response of BroadcastGroupApi->list_broadcast_group:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
-from openapi_client.models.broadcast_group_update_request import BroadcastGroupUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.models.broadcast_group_update_request import BroadcastGroupUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.BroadcastGroupApi(api_client)
+    api_instance = unifi_client.BroadcastGroupApi(api_client)
     id = 'id_example' # str | 
-    broadcast_group_update_request = openapi_client.BroadcastGroupUpdateRequest() # BroadcastGroupUpdateRequest |  (optional)
+    broadcast_group_update_request = unifi_client.BroadcastGroupUpdateRequest() # BroadcastGroupUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_broadcast_group(id, broadcast_group_update_request=broadcast_group_update_request)
+        api_response = await api_instance.update_broadcast_group(id, broadcast_group_update_request=broadcast_group_update_request)
         print("The response of BroadcastGroupApi->update_broadcast_group:\n")
         pprint(api_response)
     except Exception as e:

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_teleport_api import SettingTeleportApi
+from unifi_client.api.setting_teleport_api import SettingTeleportApi
 
 
 class TestSettingTeleportApi(unittest.TestCase):

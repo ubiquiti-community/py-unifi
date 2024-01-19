@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wlan_schedule_with_duration import WLANScheduleWithDuration
+from unifi_client.models.wlan_schedule_with_duration import WLANScheduleWithDuration
 
 # TODO update the JSON string below
 json = "{}"

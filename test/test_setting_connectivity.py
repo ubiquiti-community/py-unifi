@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_connectivity import SettingConnectivity
+from unifi_client.models.setting_connectivity import SettingConnectivity
 
 class TestSettingConnectivity(unittest.TestCase):
     """SettingConnectivity unit test stubs"""

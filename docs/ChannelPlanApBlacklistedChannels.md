@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.channel_plan_ap_blacklisted_channels import ChannelPlanApBlacklistedChannels
+from unifi_client.models.channel_plan_ap_blacklisted_channels import ChannelPlanApBlacklistedChannels
 
 # TODO update the JSON string below
 json = "{}"

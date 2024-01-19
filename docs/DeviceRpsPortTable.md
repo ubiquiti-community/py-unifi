@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_rps_port_table import DeviceRpsPortTable
+from unifi_client.models.device_rps_port_table import DeviceRpsPortTable
 
 # TODO update the JSON string below
 json = "{}"

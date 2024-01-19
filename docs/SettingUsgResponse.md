@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_usg_response import SettingUsgResponse
+from unifi_client.models.setting_usg_response import SettingUsgResponse
 
 # TODO update the JSON string below
 json = "{}"

@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.dynamic_dns import DynamicDNS
+from unifi_client.models.dynamic_dns import DynamicDNS
 
 # TODO update the JSON string below
 json = "{}"

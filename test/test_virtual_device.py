@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.virtual_device import VirtualDevice
+from unifi_client.models.virtual_device import VirtualDevice
 
 class TestVirtualDevice(unittest.TestCase):
     """VirtualDevice unit test stubs"""

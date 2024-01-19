@@ -1,4 +1,4 @@
-# openapi_client.DynamicDNSApi
+# unifi_client.DynamicDNSApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dynamic_dns import DynamicDNS
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dynamic_dns import DynamicDNS
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DynamicDNSApi(api_client)
-    dynamic_dns = openapi_client.DynamicDNS() # DynamicDNS |  (optional)
+    api_instance = unifi_client.DynamicDNSApi(api_client)
+    dynamic_dns = unifi_client.DynamicDNS() # DynamicDNS |  (optional)
 
     try:
-        api_response = api_instance.create_dynamic_dns(dynamic_dns=dynamic_dns)
+        api_response = await api_instance.create_dynamic_dns(dynamic_dns=dynamic_dns)
         print("The response of DynamicDNSApi->create_dynamic_dns:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DynamicDNSApi(api_client)
+    api_instance = unifi_client.DynamicDNSApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_dynamic_dns(id)
+        api_response = await api_instance.delete_dynamic_dns(id)
         print("The response of DynamicDNSApi->delete_dynamic_dns:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DynamicDNSApi(api_client)
+    api_instance = unifi_client.DynamicDNSApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_dynamic_dns(id)
+        api_response = await api_instance.get_dynamic_dns(id)
         print("The response of DynamicDNSApi->get_dynamic_dns:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DynamicDNSApi(api_client)
+    api_instance = unifi_client.DynamicDNSApi(api_client)
 
     try:
-        api_response = api_instance.list_dynamic_dns()
+        api_response = await api_instance.list_dynamic_dns()
         print("The response of DynamicDNSApi->list_dynamic_dns:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
-from openapi_client.models.dynamic_dns_update_request import DynamicDNSUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.models.dynamic_dns_update_request import DynamicDNSUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DynamicDNSApi(api_client)
+    api_instance = unifi_client.DynamicDNSApi(api_client)
     id = 'id_example' # str | 
-    dynamic_dns_update_request = openapi_client.DynamicDNSUpdateRequest() # DynamicDNSUpdateRequest |  (optional)
+    dynamic_dns_update_request = unifi_client.DynamicDNSUpdateRequest() # DynamicDNSUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_dynamic_dns(id, dynamic_dns_update_request=dynamic_dns_update_request)
+        api_response = await api_instance.update_dynamic_dns(id, dynamic_dns_update_request=dynamic_dns_update_request)
         print("The response of DynamicDNSApi->update_dynamic_dns:\n")
         pprint(api_response)
     except Exception as e:

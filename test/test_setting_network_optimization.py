@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_network_optimization import SettingNetworkOptimization
+from unifi_client.models.setting_network_optimization import SettingNetworkOptimization
 
 class TestSettingNetworkOptimization(unittest.TestCase):
     """SettingNetworkOptimization unit test stubs"""

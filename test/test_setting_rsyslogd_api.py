@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_rsyslogd_api import SettingRsyslogdApi
+from unifi_client.api.setting_rsyslogd_api import SettingRsyslogdApi
 
 
 class TestSettingRsyslogdApi(unittest.TestCase):

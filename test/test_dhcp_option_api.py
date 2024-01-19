@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.dhcp_option_api import DHCPOptionApi
+from unifi_client.api.dhcp_option_api import DHCPOptionApi
 
 
 class TestDHCPOptionApi(unittest.TestCase):

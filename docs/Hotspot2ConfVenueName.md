@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hotspot2_conf_venue_name import Hotspot2ConfVenueName
+from unifi_client.models.hotspot2_conf_venue_name import Hotspot2ConfVenueName
 
 # TODO update the JSON string below
 json = "{}"

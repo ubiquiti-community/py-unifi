@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.account_api import AccountApi
+from unifi_client.api.account_api import AccountApi
 
 
 class TestAccountApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_country_response import SettingCountryResponse
+from unifi_client.models.setting_country_response import SettingCountryResponse
 
 class TestSettingCountryResponse(unittest.TestCase):
     """SettingCountryResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingCountryResponse(unittest.TestCase):
         if include_optional:
             return SettingCountryResponse(
                 data = [
-                    openapi_client.models.setting_country.SettingCountry(
+                    unifi_client.models.setting_country.SettingCountry(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingCountryResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

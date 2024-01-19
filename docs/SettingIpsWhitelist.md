@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_ips_whitelist import SettingIpsWhitelist
+from unifi_client.models.setting_ips_whitelist import SettingIpsWhitelist
 
 # TODO update the JSON string below
 json = "{}"

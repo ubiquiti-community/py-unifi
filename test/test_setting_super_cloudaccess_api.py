@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_cloudaccess_api import SettingSuperCloudaccessApi
+from unifi_client.api.setting_super_cloudaccess_api import SettingSuperCloudaccessApi
 
 
 class TestSettingSuperCloudaccessApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_element_adopt import SettingElementAdopt
+from unifi_client.models.setting_element_adopt import SettingElementAdopt
 
 class TestSettingElementAdopt(unittest.TestCase):
     """SettingElementAdopt unit test stubs"""

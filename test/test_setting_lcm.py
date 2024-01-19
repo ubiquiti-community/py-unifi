@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_lcm import SettingLcm
+from unifi_client.models.setting_lcm import SettingLcm
 
 class TestSettingLcm(unittest.TestCase):
     """SettingLcm unit test stubs"""

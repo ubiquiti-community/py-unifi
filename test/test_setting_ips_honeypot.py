@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_honeypot import SettingIpsHoneypot
+from unifi_client.models.setting_ips_honeypot import SettingIpsHoneypot
 
 class TestSettingIpsHoneypot(unittest.TestCase):
     """SettingIpsHoneypot unit test stubs"""

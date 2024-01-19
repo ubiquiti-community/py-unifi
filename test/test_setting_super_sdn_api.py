@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_sdn_api import SettingSuperSdnApi
+from unifi_client.api.setting_super_sdn_api import SettingSuperSdnApi
 
 
 class TestSettingSuperSdnApi(unittest.TestCase):

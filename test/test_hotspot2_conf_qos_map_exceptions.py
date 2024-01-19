@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_qos_map_exceptions import Hotspot2ConfQOSMapExceptions
+from unifi_client.models.hotspot2_conf_qos_map_exceptions import Hotspot2ConfQOSMapExceptions
 
 class TestHotspot2ConfQOSMapExceptions(unittest.TestCase):
     """Hotspot2ConfQOSMapExceptions unit test stubs"""

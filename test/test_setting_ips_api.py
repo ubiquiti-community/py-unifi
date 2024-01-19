@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_ips_api import SettingIpsApi
+from unifi_client.api.setting_ips_api import SettingIpsApi
 
 
 class TestSettingIpsApi(unittest.TestCase):

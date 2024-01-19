@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_global_ap import SettingGlobalAp
+from unifi_client.models.setting_global_ap import SettingGlobalAp
 
 # TODO update the JSON string below
 json = "{}"

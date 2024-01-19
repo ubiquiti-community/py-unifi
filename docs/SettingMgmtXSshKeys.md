@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_mgmt_x_ssh_keys import SettingMgmtXSshKeys
+from unifi_client.models.setting_mgmt_x_ssh_keys import SettingMgmtXSshKeys
 
 # TODO update the JSON string below
 json = "{}"

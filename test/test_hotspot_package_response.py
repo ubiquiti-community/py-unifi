@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot_package_response import HotspotPackageResponse
+from unifi_client.models.hotspot_package_response import HotspotPackageResponse
 
 class TestHotspotPackageResponse(unittest.TestCase):
     """HotspotPackageResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestHotspotPackageResponse(unittest.TestCase):
         if include_optional:
             return HotspotPackageResponse(
                 data = [
-                    openapi_client.models.hotspot_package.HotspotPackage(
+                    unifi_client.models.hotspot_package.HotspotPackage(
                         _id = '', 
                         amount = 1.337, 
                         attr_hidden = True, 
@@ -74,7 +74,7 @@ class TestHotspotPackageResponse(unittest.TestCase):
                         trial_duration_minutes = 56, 
                         trial_reset = 1.337, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.firewall_group_response import FirewallGroupResponse
+from unifi_client.models.firewall_group_response import FirewallGroupResponse
 
 class TestFirewallGroupResponse(unittest.TestCase):
     """FirewallGroupResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestFirewallGroupResponse(unittest.TestCase):
         if include_optional:
             return FirewallGroupResponse(
                 data = [
-                    openapi_client.models.firewall_group.FirewallGroup(
+                    unifi_client.models.firewall_group.FirewallGroup(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -50,7 +50,7 @@ class TestFirewallGroupResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

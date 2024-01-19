@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_usg import SettingUsg
+from unifi_client.models.setting_usg import SettingUsg
 
 class TestSettingUsg(unittest.TestCase):
     """SettingUsg unit test stubs"""

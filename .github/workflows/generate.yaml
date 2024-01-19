@@ -18,6 +18,7 @@ jobs:
         with:
           generator: python
           openapi-url: https://ubiquiti-community.github.io/unifi-api/openapi.yaml
+          command-args: --git-repo-id py-unifi --git-user-id ubiquiti-community --api-package unifi_client --additional-properties library=asyncio,packageName=unifi_client,projectName=unifi-api,packageVersion=0.1.0
           output-dir: .
 
   

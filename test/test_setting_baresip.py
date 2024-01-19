@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_baresip import SettingBaresip
+from unifi_client.models.setting_baresip import SettingBaresip
 
 class TestSettingBaresip(unittest.TestCase):
     """SettingBaresip unit test stubs"""

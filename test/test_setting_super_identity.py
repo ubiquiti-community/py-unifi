@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_identity import SettingSuperIdentity
+from unifi_client.models.setting_super_identity import SettingSuperIdentity
 
 class TestSettingSuperIdentity(unittest.TestCase):
     """SettingSuperIdentity unit test stubs"""

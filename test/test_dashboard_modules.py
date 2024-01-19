@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dashboard_modules import DashboardModules
+from unifi_client.models.dashboard_modules import DashboardModules
 
 class TestDashboardModules(unittest.TestCase):
     """DashboardModules unit test stubs"""

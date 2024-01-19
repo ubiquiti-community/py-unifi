@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.media_file_api import MediaFileApi
+from unifi_client.api.media_file_api import MediaFileApi
 
 
 class TestMediaFileApi(unittest.TestCase):

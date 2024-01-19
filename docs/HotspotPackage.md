@@ -44,7 +44,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hotspot_package import HotspotPackage
+from unifi_client.models.hotspot_package import HotspotPackage
 
 # TODO update the JSON string below
 json = "{}"

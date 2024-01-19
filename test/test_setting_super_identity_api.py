@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_identity_api import SettingSuperIdentityApi
+from unifi_client.api.setting_super_identity_api import SettingSuperIdentityApi
 
 
 class TestSettingSuperIdentityApi(unittest.TestCase):

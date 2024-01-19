@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.wlan_group_api import WLANGroupApi
+from unifi_client.api.wlan_group_api import WLANGroupApi
 
 
 class TestWLANGroupApi(unittest.TestCase):

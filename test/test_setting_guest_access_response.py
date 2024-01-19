@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_guest_access_response import SettingGuestAccessResponse
+from unifi_client.models.setting_guest_access_response import SettingGuestAccessResponse
 
 class TestSettingGuestAccessResponse(unittest.TestCase):
     """SettingGuestAccessResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingGuestAccessResponse(unittest.TestCase):
         if include_optional:
             return SettingGuestAccessResponse(
                 data = [
-                    openapi_client.models.setting_guest_access.SettingGuestAccess(
+                    unifi_client.models.setting_guest_access.SettingGuestAccess(
                         _id = '', 
                         allowed_subnet_ = '', 
                         attr_hidden = True, 
@@ -147,7 +147,7 @@ class TestSettingGuestAccessResponse(unittest.TestCase):
                         x_wechat_app_secret = '', 
                         x_wechat_secret_key = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

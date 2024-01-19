@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.user_group_update_request import UserGroupUpdateRequest
+from unifi_client.models.user_group_update_request import UserGroupUpdateRequest
 
 class TestUserGroupUpdateRequest(unittest.TestCase):
     """UserGroupUpdateRequest unit test stubs"""

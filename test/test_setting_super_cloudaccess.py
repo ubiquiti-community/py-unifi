@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_cloudaccess import SettingSuperCloudaccess
+from unifi_client.models.setting_super_cloudaccess import SettingSuperCloudaccess
 
 class TestSettingSuperCloudaccess(unittest.TestCase):
     """SettingSuperCloudaccess unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tag_update_request import TagUpdateRequest
+from unifi_client.models.tag_update_request import TagUpdateRequest
 
 class TestTagUpdateRequest(unittest.TestCase):
     """TagUpdateRequest unit test stubs"""

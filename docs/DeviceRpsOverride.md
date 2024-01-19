@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_rps_override import DeviceRpsOverride
+from unifi_client.models.device_rps_override import DeviceRpsOverride
 
 # TODO update the JSON string below
 json = "{}"

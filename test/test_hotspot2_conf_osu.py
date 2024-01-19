@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_osu import Hotspot2ConfOsu
+from unifi_client.models.hotspot2_conf_osu import Hotspot2ConfOsu
 
 class TestHotspot2ConfOsu(unittest.TestCase):
     """Hotspot2ConfOsu unit test stubs"""
@@ -37,17 +37,17 @@ class TestHotspot2ConfOsu(unittest.TestCase):
         if include_optional:
             return Hotspot2ConfOsu(
                 description = [
-                    openapi_client.models.hotspot2_conf_description.Hotspot2ConfDescription(
+                    unifi_client.models.hotspot2_conf_description.Hotspot2ConfDescription(
                         language = '', 
                         text = '', )
                     ],
                 friendly_name = [
-                    openapi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
+                    unifi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
                         language = '', 
                         text = '', )
                     ],
                 icon = [
-                    openapi_client.models.hotspot2_conf_icon.Hotspot2ConfIcon(
+                    unifi_client.models.hotspot2_conf_icon.Hotspot2ConfIcon(
                         name = '', )
                     ],
                 method_oma_dm = True,

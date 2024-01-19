@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.radius_profile_api import RADIUSProfileApi
+from unifi_client.api.radius_profile_api import RADIUSProfileApi
 
 
 class TestRADIUSProfileApi(unittest.TestCase):

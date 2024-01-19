@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.map_update_request import MapUpdateRequest
+from unifi_client.models.map_update_request import MapUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

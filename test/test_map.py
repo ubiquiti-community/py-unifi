@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.map import Map
+from unifi_client.models.map import Map
 
 class TestMap(unittest.TestCase):
     """Map unit test stubs"""

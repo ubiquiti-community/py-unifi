@@ -52,7 +52,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.port_profile_update_request import PortProfileUpdateRequest
+from unifi_client.models.port_profile_update_request import PortProfileUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

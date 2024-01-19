@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_guest_access import SettingGuestAccess
+from unifi_client.models.setting_guest_access import SettingGuestAccess
 
 class TestSettingGuestAccess(unittest.TestCase):
     """SettingGuestAccess unit test stubs"""

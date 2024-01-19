@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_global_ap_response import SettingGlobalApResponse
+from unifi_client.models.setting_global_ap_response import SettingGlobalApResponse
 
 class TestSettingGlobalApResponse(unittest.TestCase):
     """SettingGlobalApResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingGlobalApResponse(unittest.TestCase):
         if include_optional:
             return SettingGlobalApResponse(
                 data = [
-                    openapi_client.models.setting_global_ap.SettingGlobalAp(
+                    unifi_client.models.setting_global_ap.SettingGlobalAp(
                         _id = '', 
                         6e_channel_size = 56, 
                         6e_tx_power = 56, 
@@ -58,7 +58,7 @@ class TestSettingGlobalApResponse(unittest.TestCase):
                         ng_tx_power_mode = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

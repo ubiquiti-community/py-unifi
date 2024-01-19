@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_fwupdate import SettingSuperFwupdate
+from unifi_client.models.setting_super_fwupdate import SettingSuperFwupdate
 
 class TestSettingSuperFwupdate(unittest.TestCase):
     """SettingSuperFwupdate unit test stubs"""

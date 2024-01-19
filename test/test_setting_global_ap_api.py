@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_global_ap_api import SettingGlobalApApi
+from unifi_client.api.setting_global_ap_api import SettingGlobalApApi
 
 
 class TestSettingGlobalApApi(unittest.TestCase):

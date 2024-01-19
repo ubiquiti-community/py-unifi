@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.models.port_forward_response import PortForwardResponse
 
 class TestPortForwardResponse(unittest.TestCase):
     """PortForwardResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestPortForwardResponse(unittest.TestCase):
         if include_optional:
             return PortForwardResponse(
                 data = [
-                    openapi_client.models.port_forward.PortForward(
+                    unifi_client.models.port_forward.PortForward(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -55,7 +55,7 @@ class TestPortForwardResponse(unittest.TestCase):
                         site_id = '', 
                         src = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

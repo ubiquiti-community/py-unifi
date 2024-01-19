@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_locale import SettingLocale
+from unifi_client.models.setting_locale import SettingLocale
 
 class TestSettingLocale(unittest.TestCase):
     """SettingLocale unit test stubs"""

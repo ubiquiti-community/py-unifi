@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.heat_map import HeatMap
+from unifi_client.models.heat_map import HeatMap
 
 class TestHeatMap(unittest.TestCase):
     """HeatMap unit test stubs"""

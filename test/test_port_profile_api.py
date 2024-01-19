@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.port_profile_api import PortProfileApi
+from unifi_client.api.port_profile_api import PortProfileApi
 
 
 class TestPortProfileApi(unittest.TestCase):

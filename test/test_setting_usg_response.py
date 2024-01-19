@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_usg_response import SettingUsgResponse
+from unifi_client.models.setting_usg_response import SettingUsgResponse
 
 class TestSettingUsgResponse(unittest.TestCase):
     """SettingUsgResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingUsgResponse(unittest.TestCase):
         if include_optional:
             return SettingUsgResponse(
                 data = [
-                    openapi_client.models.setting_usg.SettingUsg(
+                    unifi_client.models.setting_usg.SettingUsg(
                         _id = '', 
                         arp_cache_base_reachable = 56, 
                         arp_cache_timeout = '', 
@@ -102,7 +102,7 @@ class TestSettingUsgResponse(unittest.TestCase):
                         upnp_secure_mode = True, 
                         upnp_wan_interface = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

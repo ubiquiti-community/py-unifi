@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_icons import Hotspot2ConfIcons
+from unifi_client.models.hotspot2_conf_icons import Hotspot2ConfIcons
 
 class TestHotspot2ConfIcons(unittest.TestCase):
     """Hotspot2ConfIcons unit test stubs"""

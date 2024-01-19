@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.routing import Routing
+from unifi_client.models.routing import Routing
 
 # TODO update the JSON string below
 json = "{}"

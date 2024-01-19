@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.device_api import DeviceApi
+from unifi_client.api.device_api import DeviceApi
 
 
 class TestDeviceApi(unittest.TestCase):

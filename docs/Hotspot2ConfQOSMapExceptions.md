@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hotspot2_conf_qos_map_exceptions import Hotspot2ConfQOSMapExceptions
+from unifi_client.models.hotspot2_conf_qos_map_exceptions import Hotspot2ConfQOSMapExceptions
 
 # TODO update the JSON string below
 json = "{}"

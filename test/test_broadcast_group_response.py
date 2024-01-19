@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.broadcast_group_response import BroadcastGroupResponse
+from unifi_client.models.broadcast_group_response import BroadcastGroupResponse
 
 class TestBroadcastGroupResponse(unittest.TestCase):
     """BroadcastGroupResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestBroadcastGroupResponse(unittest.TestCase):
         if include_optional:
             return BroadcastGroupResponse(
                 data = [
-                    openapi_client.models.broadcast_group.BroadcastGroup(
+                    unifi_client.models.broadcast_group.BroadcastGroup(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -49,7 +49,7 @@ class TestBroadcastGroupResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

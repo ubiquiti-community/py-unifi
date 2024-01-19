@@ -1,0 +1,6 @@
+{
+  "library": "asyncio",
+  "packageName": "unifi_client",
+  "projectName": "unifi-api",
+  "packageVersion": "0.1.0"
+}

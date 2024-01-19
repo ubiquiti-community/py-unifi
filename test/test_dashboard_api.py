@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.dashboard_api import DashboardApi
+from unifi_client.api.dashboard_api import DashboardApi
 
 
 class TestDashboardApi(unittest.TestCase):

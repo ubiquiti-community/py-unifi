@@ -63,7 +63,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_super_mgmt import SettingSuperMgmt
+from unifi_client.models.setting_super_mgmt import SettingSuperMgmt
 
 # TODO update the JSON string below
 json = "{}"

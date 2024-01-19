@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.dhcp_option import DHCPOption
+from unifi_client.models.dhcp_option import DHCPOption
 
 # TODO update the JSON string below
 json = "{}"

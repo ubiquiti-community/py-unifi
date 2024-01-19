@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_ether_lighting import DeviceEtherLighting
+from unifi_client.models.device_ether_lighting import DeviceEtherLighting
 
 class TestDeviceEtherLighting(unittest.TestCase):
     """DeviceEtherLighting unit test stubs"""

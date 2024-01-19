@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_group_update_request import WLANGroupUpdateRequest
+from unifi_client.models.wlan_group_update_request import WLANGroupUpdateRequest
 
 class TestWLANGroupUpdateRequest(unittest.TestCase):
     """WLANGroupUpdateRequest unit test stubs"""

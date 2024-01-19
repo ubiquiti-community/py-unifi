@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_locale_api import SettingLocaleApi
+from unifi_client.api.setting_locale_api import SettingLocaleApi
 
 
 class TestSettingLocaleApi(unittest.TestCase):

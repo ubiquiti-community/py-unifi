@@ -72,7 +72,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_usg import SettingUsg
+from unifi_client.models.setting_usg import SettingUsg
 
 # TODO update the JSON string below
 json = "{}"

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_plan_update_request import ChannelPlanUpdateRequest
+from unifi_client.models.channel_plan_update_request import ChannelPlanUpdateRequest
 
 class TestChannelPlanUpdateRequest(unittest.TestCase):
     """ChannelPlanUpdateRequest unit test stubs"""
@@ -38,7 +38,7 @@ class TestChannelPlanUpdateRequest(unittest.TestCase):
             return ChannelPlanUpdateRequest(
                 id = '',
                 ap_blacklisted_channels = [
-                    openapi_client.models.channel_plan_ap_blacklisted_channels.ChannelPlanApBlacklistedChannels(
+                    unifi_client.models.channel_plan_ap_blacklisted_channels.ChannelPlanApBlacklistedChannels(
                         channel = 56, 
                         mac = '', 
                         timestamp = 56, )
@@ -49,7 +49,7 @@ class TestChannelPlanUpdateRequest(unittest.TestCase):
                 attr_no_edit = True,
                 conf_source = '',
                 coupling = [
-                    openapi_client.models.channel_plan_coupling.ChannelPlanCoupling(
+                    unifi_client.models.channel_plan_coupling.ChannelPlanCoupling(
                         rssi = 56, 
                         source = '', 
                         target = '', )
@@ -59,7 +59,7 @@ class TestChannelPlanUpdateRequest(unittest.TestCase):
                 note = '',
                 radio = '',
                 radio_table = [
-                    openapi_client.models.channel_plan_radio_table.ChannelPlanRadioTable(
+                    unifi_client.models.channel_plan_radio_table.ChannelPlanRadioTable(
                         backup_channel = '', 
                         channel = '', 
                         device_mac = '', 
@@ -70,12 +70,12 @@ class TestChannelPlanUpdateRequest(unittest.TestCase):
                     ],
                 satisfaction = 1.337,
                 satisfaction_table = [
-                    openapi_client.models.channel_plan_satisfaction_table.ChannelPlanSatisfactionTable(
+                    unifi_client.models.channel_plan_satisfaction_table.ChannelPlanSatisfactionTable(
                         device_mac = '', 
                         satisfaction = 1.337, )
                     ],
                 site_blacklisted_channels = [
-                    openapi_client.models.channel_plan_site_blacklisted_channels.ChannelPlanSiteBlacklistedChannels(
+                    unifi_client.models.channel_plan_site_blacklisted_channels.ChannelPlanSiteBlacklistedChannels(
                         channel = 56, 
                         timestamp = 56, )
                     ],

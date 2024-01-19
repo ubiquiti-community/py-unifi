@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ntp_response import SettingNtpResponse
+from unifi_client.models.setting_ntp_response import SettingNtpResponse
 
 class TestSettingNtpResponse(unittest.TestCase):
     """SettingNtpResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingNtpResponse(unittest.TestCase):
         if include_optional:
             return SettingNtpResponse(
                 data = [
-                    openapi_client.models.setting_ntp.SettingNtp(
+                    unifi_client.models.setting_ntp.SettingNtp(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -51,7 +51,7 @@ class TestSettingNtpResponse(unittest.TestCase):
                         setting_preference = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

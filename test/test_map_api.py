@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.map_api import MapApi
+from unifi_client.api.map_api import MapApi
 
 
 class TestMapApi(unittest.TestCase):

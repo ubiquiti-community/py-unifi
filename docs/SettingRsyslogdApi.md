@@ -1,4 +1,4 @@
-# openapi_client.SettingRsyslogdApi
+# unifi_client.SettingRsyslogdApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingRsyslogdApi(api_client)
+    api_instance = unifi_client.SettingRsyslogdApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_rsyslogd()
+        api_response = await api_instance.get_setting_rsyslogd()
         print("The response of SettingRsyslogdApi->get_setting_rsyslogd:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_rsyslogd import SettingRsyslogd
-from openapi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_rsyslogd import SettingRsyslogd
+from unifi_client.models.setting_rsyslogd_response import SettingRsyslogdResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingRsyslogdApi(api_client)
-    setting_rsyslogd = openapi_client.SettingRsyslogd() # SettingRsyslogd |  (optional)
+    api_instance = unifi_client.SettingRsyslogdApi(api_client)
+    setting_rsyslogd = unifi_client.SettingRsyslogd() # SettingRsyslogd |  (optional)
 
     try:
-        api_response = api_instance.update_setting_rsyslogd(setting_rsyslogd=setting_rsyslogd)
+        api_response = await api_instance.update_setting_rsyslogd(setting_rsyslogd=setting_rsyslogd)
         print("The response of SettingRsyslogdApi->update_setting_rsyslogd:\n")
         pprint(api_response)
     except Exception as e:

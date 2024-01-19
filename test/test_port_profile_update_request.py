@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.port_profile_update_request import PortProfileUpdateRequest
+from unifi_client.models.port_profile_update_request import PortProfileUpdateRequest
 
 class TestPortProfileUpdateRequest(unittest.TestCase):
     """PortProfileUpdateRequest unit test stubs"""

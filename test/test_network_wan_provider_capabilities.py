@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.network_wan_provider_capabilities import NetworkWANProviderCapabilities
+from unifi_client.models.network_wan_provider_capabilities import NetworkWANProviderCapabilities
 
 class TestNetworkWANProviderCapabilities(unittest.TestCase):
     """NetworkWANProviderCapabilities unit test stubs"""

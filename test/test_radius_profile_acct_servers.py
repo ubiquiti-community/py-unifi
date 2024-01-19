@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.radius_profile_acct_servers import RADIUSProfileAcctServers
+from unifi_client.models.radius_profile_acct_servers import RADIUSProfileAcctServers
 
 class TestRADIUSProfileAcctServers(unittest.TestCase):
     """RADIUSProfileAcctServers unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_usw import SettingUsw
+from unifi_client.models.setting_usw import SettingUsw
 
 class TestSettingUsw(unittest.TestCase):
     """SettingUsw unit test stubs"""

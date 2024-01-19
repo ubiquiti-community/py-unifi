@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_group import WLANGroup
+from unifi_client.models.wlan_group import WLANGroup
 
 class TestWLANGroup(unittest.TestCase):
     """WLANGroup unit test stubs"""

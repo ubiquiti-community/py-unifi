@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.schedule_task_api import ScheduleTaskApi
+from unifi_client.api.schedule_task_api import ScheduleTaskApi
 
 
 class TestScheduleTaskApi(unittest.TestCase):

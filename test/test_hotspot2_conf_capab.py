@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_capab import Hotspot2ConfCapab
+from unifi_client.models.hotspot2_conf_capab import Hotspot2ConfCapab
 
 class TestHotspot2ConfCapab(unittest.TestCase):
     """Hotspot2ConfCapab unit test stubs"""

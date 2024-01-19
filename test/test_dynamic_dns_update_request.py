@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dynamic_dns_update_request import DynamicDNSUpdateRequest
+from unifi_client.models.dynamic_dns_update_request import DynamicDNSUpdateRequest
 
 class TestDynamicDNSUpdateRequest(unittest.TestCase):
     """DynamicDNSUpdateRequest unit test stubs"""

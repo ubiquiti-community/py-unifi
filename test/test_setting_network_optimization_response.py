@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
+from unifi_client.models.setting_network_optimization_response import SettingNetworkOptimizationResponse
 
 class TestSettingNetworkOptimizationResponse(unittest.TestCase):
     """SettingNetworkOptimizationResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingNetworkOptimizationResponse(unittest.TestCase):
         if include_optional:
             return SettingNetworkOptimizationResponse(
                 data = [
-                    openapi_client.models.setting_network_optimization.SettingNetworkOptimization(
+                    unifi_client.models.setting_network_optimization.SettingNetworkOptimization(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingNetworkOptimizationResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_porta_api import SettingPortaApi
+from unifi_client.api.setting_porta_api import SettingPortaApi
 
 
 class TestSettingPortaApi(unittest.TestCase):

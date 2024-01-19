@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.network_wandhcp_options import NetworkWANDHCPOptions
+from unifi_client.models.network_wandhcp_options import NetworkWANDHCPOptions
 
 class TestNetworkWANDHCPOptions(unittest.TestCase):
     """NetworkWANDHCPOptions unit test stubs"""

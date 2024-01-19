@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
 
 class TestDynamicDNSResponse(unittest.TestCase):
     """DynamicDNSResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDynamicDNSResponse(unittest.TestCase):
         if include_optional:
             return DynamicDNSResponse(
                 data = [
-                    openapi_client.models.dynamic_dns.DynamicDNS(
+                    unifi_client.models.dynamic_dns.DynamicDNS(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -55,7 +55,7 @@ class TestDynamicDNSResponse(unittest.TestCase):
                         site_id = '', 
                         x_password = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

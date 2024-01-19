@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_smtp import SettingSuperSmtp
+from unifi_client.models.setting_super_smtp import SettingSuperSmtp
 
 class TestSettingSuperSmtp(unittest.TestCase):
     """SettingSuperSmtp unit test stubs"""

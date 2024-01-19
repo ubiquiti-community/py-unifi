@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_ips import SettingIps
+from unifi_client.models.setting_ips import SettingIps
 
 # TODO update the JSON string below
 json = "{}"

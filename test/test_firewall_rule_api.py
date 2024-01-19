@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.firewall_rule_api import FirewallRuleApi
+from unifi_client.api.firewall_rule_api import FirewallRuleApi
 
 
 class TestFirewallRuleApi(unittest.TestCase):

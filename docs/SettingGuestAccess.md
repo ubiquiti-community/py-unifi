@@ -113,7 +113,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_guest_access import SettingGuestAccess
+from unifi_client.models.setting_guest_access import SettingGuestAccess
 
 # TODO update the JSON string below
 json = "{}"

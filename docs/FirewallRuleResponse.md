@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.firewall_rule_response import FirewallRuleResponse
+from unifi_client.models.firewall_rule_response import FirewallRuleResponse
 
 # TODO update the JSON string below
 json = "{}"

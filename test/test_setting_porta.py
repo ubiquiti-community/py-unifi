@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_porta import SettingPorta
+from unifi_client.models.setting_porta import SettingPorta
 
 class TestSettingPorta(unittest.TestCase):
     """SettingPorta unit test stubs"""

@@ -1,4 +1,4 @@
-# openapi_client.SettingTeleportApi
+# unifi_client.SettingTeleportApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_teleport_response import SettingTeleportResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_teleport_response import SettingTeleportResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingTeleportApi(api_client)
+    api_instance = unifi_client.SettingTeleportApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_teleport()
+        api_response = await api_instance.get_setting_teleport()
         print("The response of SettingTeleportApi->get_setting_teleport:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_teleport import SettingTeleport
-from openapi_client.models.setting_teleport_response import SettingTeleportResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_teleport import SettingTeleport
+from unifi_client.models.setting_teleport_response import SettingTeleportResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingTeleportApi(api_client)
-    setting_teleport = openapi_client.SettingTeleport() # SettingTeleport |  (optional)
+    api_instance = unifi_client.SettingTeleportApi(api_client)
+    setting_teleport = unifi_client.SettingTeleport() # SettingTeleport |  (optional)
 
     try:
-        api_response = api_instance.update_setting_teleport(setting_teleport=setting_teleport)
+        api_response = await api_instance.update_setting_teleport(setting_teleport=setting_teleport)
         print("The response of SettingTeleportApi->update_setting_teleport:\n")
         pprint(api_response)
     except Exception as e:

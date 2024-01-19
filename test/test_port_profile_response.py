@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.port_profile_response import PortProfileResponse
+from unifi_client.models.port_profile_response import PortProfileResponse
 
 class TestPortProfileResponse(unittest.TestCase):
     """PortProfileResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestPortProfileResponse(unittest.TestCase):
         if include_optional:
             return PortProfileResponse(
                 data = [
-                    openapi_client.models.port_profile.PortProfile(
+                    unifi_client.models.port_profile.PortProfile(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -86,7 +86,7 @@ class TestPortProfileResponse(unittest.TestCase):
                         tagged_vlan_mgmt = '', 
                         voice_networkconf_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

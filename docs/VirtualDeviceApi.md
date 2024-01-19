@@ -1,4 +1,4 @@
-# openapi_client.VirtualDeviceApi
+# unifi_client.VirtualDeviceApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.virtual_device import VirtualDevice
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.virtual_device import VirtualDevice
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VirtualDeviceApi(api_client)
-    virtual_device = openapi_client.VirtualDevice() # VirtualDevice |  (optional)
+    api_instance = unifi_client.VirtualDeviceApi(api_client)
+    virtual_device = unifi_client.VirtualDevice() # VirtualDevice |  (optional)
 
     try:
-        api_response = api_instance.create_virtual_device(virtual_device=virtual_device)
+        api_response = await api_instance.create_virtual_device(virtual_device=virtual_device)
         print("The response of VirtualDeviceApi->create_virtual_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VirtualDeviceApi(api_client)
+    api_instance = unifi_client.VirtualDeviceApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_virtual_device(id)
+        api_response = await api_instance.delete_virtual_device(id)
         print("The response of VirtualDeviceApi->delete_virtual_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VirtualDeviceApi(api_client)
+    api_instance = unifi_client.VirtualDeviceApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_virtual_device(id)
+        api_response = await api_instance.get_virtual_device(id)
         print("The response of VirtualDeviceApi->get_virtual_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VirtualDeviceApi(api_client)
+    api_instance = unifi_client.VirtualDeviceApi(api_client)
 
     try:
-        api_response = api_instance.list_virtual_device()
+        api_response = await api_instance.list_virtual_device()
         print("The response of VirtualDeviceApi->list_virtual_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
-from openapi_client.models.virtual_device_update_request import VirtualDeviceUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.models.virtual_device_update_request import VirtualDeviceUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.VirtualDeviceApi(api_client)
+    api_instance = unifi_client.VirtualDeviceApi(api_client)
     id = 'id_example' # str | 
-    virtual_device_update_request = openapi_client.VirtualDeviceUpdateRequest() # VirtualDeviceUpdateRequest |  (optional)
+    virtual_device_update_request = unifi_client.VirtualDeviceUpdateRequest() # VirtualDeviceUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_virtual_device(id, virtual_device_update_request=virtual_device_update_request)
+        api_response = await api_instance.update_virtual_device(id, virtual_device_update_request=virtual_device_update_request)
         print("The response of VirtualDeviceApi->update_virtual_device:\n")
         pprint(api_response)
     except Exception as e:

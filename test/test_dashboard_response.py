@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dashboard_response import DashboardResponse
+from unifi_client.models.dashboard_response import DashboardResponse
 
 class TestDashboardResponse(unittest.TestCase):
     """DashboardResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDashboardResponse(unittest.TestCase):
         if include_optional:
             return DashboardResponse(
                 data = [
-                    openapi_client.models.dashboard.Dashboard(
+                    unifi_client.models.dashboard.Dashboard(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestDashboardResponse(unittest.TestCase):
                         desc = '', 
                         is_public = True, 
                         modules = [
-                            openapi_client.models.dashboard_modules.DashboardModules(
+                            unifi_client.models.dashboard_modules.DashboardModules(
                                 config = '', 
                                 id = '', 
                                 module_id = '', 
@@ -56,7 +56,7 @@ class TestDashboardResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

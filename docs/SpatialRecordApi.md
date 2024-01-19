@@ -1,4 +1,4 @@
-# openapi_client.SpatialRecordApi
+# unifi_client.SpatialRecordApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.spatial_record import SpatialRecord
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.spatial_record import SpatialRecord
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SpatialRecordApi(api_client)
-    spatial_record = openapi_client.SpatialRecord() # SpatialRecord |  (optional)
+    api_instance = unifi_client.SpatialRecordApi(api_client)
+    spatial_record = unifi_client.SpatialRecord() # SpatialRecord |  (optional)
 
     try:
-        api_response = api_instance.create_spatial_record(spatial_record=spatial_record)
+        api_response = await api_instance.create_spatial_record(spatial_record=spatial_record)
         print("The response of SpatialRecordApi->create_spatial_record:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SpatialRecordApi(api_client)
+    api_instance = unifi_client.SpatialRecordApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_spatial_record(id)
+        api_response = await api_instance.delete_spatial_record(id)
         print("The response of SpatialRecordApi->delete_spatial_record:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SpatialRecordApi(api_client)
+    api_instance = unifi_client.SpatialRecordApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_spatial_record(id)
+        api_response = await api_instance.get_spatial_record(id)
         print("The response of SpatialRecordApi->get_spatial_record:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SpatialRecordApi(api_client)
+    api_instance = unifi_client.SpatialRecordApi(api_client)
 
     try:
-        api_response = api_instance.list_spatial_record()
+        api_response = await api_instance.list_spatial_record()
         print("The response of SpatialRecordApi->list_spatial_record:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.spatial_record_response import SpatialRecordResponse
-from openapi_client.models.spatial_record_update_request import SpatialRecordUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.spatial_record_response import SpatialRecordResponse
+from unifi_client.models.spatial_record_update_request import SpatialRecordUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SpatialRecordApi(api_client)
+    api_instance = unifi_client.SpatialRecordApi(api_client)
     id = 'id_example' # str | 
-    spatial_record_update_request = openapi_client.SpatialRecordUpdateRequest() # SpatialRecordUpdateRequest |  (optional)
+    spatial_record_update_request = unifi_client.SpatialRecordUpdateRequest() # SpatialRecordUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_spatial_record(id, spatial_record_update_request=spatial_record_update_request)
+        api_response = await api_instance.update_spatial_record(id, spatial_record_update_request=spatial_record_update_request)
         print("The response of SpatialRecordApi->update_spatial_record:\n")
         pprint(api_response)
     except Exception as e:

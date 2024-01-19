@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_dpi_response import SettingDpiResponse
+from unifi_client.models.setting_dpi_response import SettingDpiResponse
 
 class TestSettingDpiResponse(unittest.TestCase):
     """SettingDpiResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingDpiResponse(unittest.TestCase):
         if include_optional:
             return SettingDpiResponse(
                 data = [
-                    openapi_client.models.setting_dpi.SettingDpi(
+                    unifi_client.models.setting_dpi.SettingDpi(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -48,7 +48,7 @@ class TestSettingDpiResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_snmp_api import SettingSnmpApi
+from unifi_client.api.setting_snmp_api import SettingSnmpApi
 
 
 class TestSettingSnmpApi(unittest.TestCase):

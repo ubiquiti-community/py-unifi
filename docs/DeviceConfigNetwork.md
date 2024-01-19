@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_config_network import DeviceConfigNetwork
+from unifi_client.models.device_config_network import DeviceConfigNetwork
 
 # TODO update the JSON string below
 json = "{}"

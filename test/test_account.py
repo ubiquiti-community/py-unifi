@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.account import Account
+from unifi_client.models.account import Account
 
 class TestAccount(unittest.TestCase):
     """Account unit test stubs"""

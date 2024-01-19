@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.virtual_device_update_request import VirtualDeviceUpdateRequest
+from unifi_client.models.virtual_device_update_request import VirtualDeviceUpdateRequest
 
 class TestVirtualDeviceUpdateRequest(unittest.TestCase):
     """VirtualDeviceUpdateRequest unit test stubs"""

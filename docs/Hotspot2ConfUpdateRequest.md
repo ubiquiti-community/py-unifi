@@ -65,7 +65,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hotspot2_conf_update_request import Hotspot2ConfUpdateRequest
+from unifi_client.models.hotspot2_conf_update_request import Hotspot2ConfUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

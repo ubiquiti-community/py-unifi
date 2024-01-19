@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dpi_app_response import DpiAppResponse
+from unifi_client.models.dpi_app_response import DpiAppResponse
 
 class TestDpiAppResponse(unittest.TestCase):
     """DpiAppResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDpiAppResponse(unittest.TestCase):
         if include_optional:
             return DpiAppResponse(
                 data = [
-                    openapi_client.models.dpi_app.DpiApp(
+                    unifi_client.models.dpi_app.DpiApp(
                         _id = '', 
                         apps = [
                             56
@@ -57,7 +57,7 @@ class TestDpiAppResponse(unittest.TestCase):
                         qos_rate_max_up = 56, 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

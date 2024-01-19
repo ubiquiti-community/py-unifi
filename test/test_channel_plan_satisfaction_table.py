@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_plan_satisfaction_table import ChannelPlanSatisfactionTable
+from unifi_client.models.channel_plan_satisfaction_table import ChannelPlanSatisfactionTable
 
 class TestChannelPlanSatisfactionTable(unittest.TestCase):
     """ChannelPlanSatisfactionTable unit test stubs"""

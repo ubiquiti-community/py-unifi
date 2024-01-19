@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.user_group import UserGroup
+from unifi_client.models.user_group import UserGroup
 
 class TestUserGroup(unittest.TestCase):
     """UserGroup unit test stubs"""

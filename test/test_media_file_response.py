@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.media_file_response import MediaFileResponse
+from unifi_client.models.media_file_response import MediaFileResponse
 
 class TestMediaFileResponse(unittest.TestCase):
     """MediaFileResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestMediaFileResponse(unittest.TestCase):
         if include_optional:
             return MediaFileResponse(
                 data = [
-                    openapi_client.models.media_file.MediaFile(
+                    unifi_client.models.media_file.MediaFile(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -46,7 +46,7 @@ class TestMediaFileResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

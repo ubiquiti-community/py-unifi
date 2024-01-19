@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_global_switch import SettingGlobalSwitch
+from unifi_client.models.setting_global_switch import SettingGlobalSwitch
 
 # TODO update the JSON string below
 json = "{}"

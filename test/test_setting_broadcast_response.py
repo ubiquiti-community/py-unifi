@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_broadcast_response import SettingBroadcastResponse
+from unifi_client.models.setting_broadcast_response import SettingBroadcastResponse
 
 class TestSettingBroadcastResponse(unittest.TestCase):
     """SettingBroadcastResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingBroadcastResponse(unittest.TestCase):
         if include_optional:
             return SettingBroadcastResponse(
                 data = [
-                    openapi_client.models.setting_broadcast.SettingBroadcast(
+                    unifi_client.models.setting_broadcast.SettingBroadcast(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -52,7 +52,7 @@ class TestSettingBroadcastResponse(unittest.TestCase):
                         sound_before_resource = '', 
                         sound_before_type = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

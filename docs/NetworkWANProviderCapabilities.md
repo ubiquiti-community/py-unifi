@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_wan_provider_capabilities import NetworkWANProviderCapabilities
+from unifi_client.models.network_wan_provider_capabilities import NetworkWANProviderCapabilities
 
 # TODO update the JSON string below
 json = "{}"

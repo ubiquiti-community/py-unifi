@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.network_nat_outbound_ip_addresses import NetworkNATOutboundIPAddresses
+from unifi_client.models.network_nat_outbound_ip_addresses import NetworkNATOutboundIPAddresses
 
 class TestNetworkNATOutboundIPAddresses(unittest.TestCase):
     """NetworkNATOutboundIPAddresses unit test stubs"""

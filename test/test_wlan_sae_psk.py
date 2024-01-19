@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_sae_psk import WLANSaePsk
+from unifi_client.models.wlan_sae_psk import WLANSaePsk
 
 class TestWLANSaePsk(unittest.TestCase):
     """WLANSaePsk unit test stubs"""

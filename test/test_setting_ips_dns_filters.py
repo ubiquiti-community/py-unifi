@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_dns_filters import SettingIpsDNSFilters
+from unifi_client.models.setting_ips_dns_filters import SettingIpsDNSFilters
 
 class TestSettingIpsDNSFilters(unittest.TestCase):
     """SettingIpsDNSFilters unit test stubs"""

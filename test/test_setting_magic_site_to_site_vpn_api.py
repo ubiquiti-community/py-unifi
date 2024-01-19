@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_magic_site_to_site_vpn_api import SettingMagicSiteToSiteVpnApi
+from unifi_client.api.setting_magic_site_to_site_vpn_api import SettingMagicSiteToSiteVpnApi
 
 
 class TestSettingMagicSiteToSiteVpnApi(unittest.TestCase):

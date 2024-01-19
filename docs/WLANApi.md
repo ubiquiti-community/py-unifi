@@ -1,4 +1,4 @@
-# openapi_client.WLANApi
+# unifi_client.WLANApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.wlan import WLAN
-from openapi_client.models.wlan_response import WLANResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.wlan import WLAN
+from unifi_client.models.wlan_response import WLANResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WLANApi(api_client)
-    wlan = openapi_client.WLAN() # WLAN |  (optional)
+    api_instance = unifi_client.WLANApi(api_client)
+    wlan = unifi_client.WLAN() # WLAN |  (optional)
 
     try:
-        api_response = api_instance.create_wlan(wlan=wlan)
+        api_response = await api_instance.create_wlan(wlan=wlan)
         print("The response of WLANApi->create_wlan:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.wlan_response import WLANResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.wlan_response import WLANResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WLANApi(api_client)
+    api_instance = unifi_client.WLANApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_wlan(id)
+        api_response = await api_instance.delete_wlan(id)
         print("The response of WLANApi->delete_wlan:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.wlan_response import WLANResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.wlan_response import WLANResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WLANApi(api_client)
+    api_instance = unifi_client.WLANApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_wlan(id)
+        api_response = await api_instance.get_wlan(id)
         print("The response of WLANApi->get_wlan:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.wlan_response import WLANResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.wlan_response import WLANResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WLANApi(api_client)
+    api_instance = unifi_client.WLANApi(api_client)
 
     try:
-        api_response = api_instance.list_wlan()
+        api_response = await api_instance.list_wlan()
         print("The response of WLANApi->list_wlan:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.wlan_response import WLANResponse
-from openapi_client.models.wlan_update_request import WLANUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.wlan_response import WLANResponse
+from unifi_client.models.wlan_update_request import WLANUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WLANApi(api_client)
+    api_instance = unifi_client.WLANApi(api_client)
     id = 'id_example' # str | 
-    wlan_update_request = openapi_client.WLANUpdateRequest() # WLANUpdateRequest |  (optional)
+    wlan_update_request = unifi_client.WLANUpdateRequest() # WLANUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_wlan(id, wlan_update_request=wlan_update_request)
+        api_response = await api_instance.update_wlan(id, wlan_update_request=wlan_update_request)
         print("The response of WLANApi->update_wlan:\n")
         pprint(api_response)
     except Exception as e:

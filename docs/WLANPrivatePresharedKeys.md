@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wlan_private_preshared_keys import WLANPrivatePresharedKeys
+from unifi_client.models.wlan_private_preshared_keys import WLANPrivatePresharedKeys
 
 # TODO update the JSON string below
 json = "{}"

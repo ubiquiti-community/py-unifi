@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_connectivity_api import SettingConnectivityApi
+from unifi_client.api.setting_connectivity_api import SettingConnectivityApi
 
 
 class TestSettingConnectivityApi(unittest.TestCase):

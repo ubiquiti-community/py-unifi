@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_ether_lighting_speed_overrides import SettingEtherLightingSpeedOverrides
+from unifi_client.models.setting_ether_lighting_speed_overrides import SettingEtherLightingSpeedOverrides
 
 # TODO update the JSON string below
 json = "{}"

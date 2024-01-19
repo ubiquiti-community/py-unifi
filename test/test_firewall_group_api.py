@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.firewall_group_api import FirewallGroupApi
+from unifi_client.api.firewall_group_api import FirewallGroupApi
 
 
 class TestFirewallGroupApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_element_adopt_response import SettingElementAdoptResponse
+from unifi_client.models.setting_element_adopt_response import SettingElementAdoptResponse
 
 class TestSettingElementAdoptResponse(unittest.TestCase):
     """SettingElementAdoptResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingElementAdoptResponse(unittest.TestCase):
         if include_optional:
             return SettingElementAdoptResponse(
                 data = [
-                    openapi_client.models.setting_element_adopt.SettingElementAdopt(
+                    unifi_client.models.setting_element_adopt.SettingElementAdopt(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -49,7 +49,7 @@ class TestSettingElementAdoptResponse(unittest.TestCase):
                         x_element_essid = '', 
                         x_element_psk = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

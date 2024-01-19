@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.schedule_task_response import ScheduleTaskResponse
+from unifi_client.models.schedule_task_response import ScheduleTaskResponse
 
 # TODO update the JSON string below
 json = "{}"

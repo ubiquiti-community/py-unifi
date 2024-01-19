@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_connectivity_response import SettingConnectivityResponse
+from unifi_client.models.setting_connectivity_response import SettingConnectivityResponse
 
 class TestSettingConnectivityResponse(unittest.TestCase):
     """SettingConnectivityResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingConnectivityResponse(unittest.TestCase):
         if include_optional:
             return SettingConnectivityResponse(
                 data = [
-                    openapi_client.models.setting_connectivity.SettingConnectivity(
+                    unifi_client.models.setting_connectivity.SettingConnectivity(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -52,7 +52,7 @@ class TestSettingConnectivityResponse(unittest.TestCase):
                         x_mesh_essid = '', 
                         x_mesh_psk = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

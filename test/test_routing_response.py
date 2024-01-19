@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.routing_response import RoutingResponse
+from unifi_client.models.routing_response import RoutingResponse
 
 class TestRoutingResponse(unittest.TestCase):
     """RoutingResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestRoutingResponse(unittest.TestCase):
         if include_optional:
             return RoutingResponse(
                 data = [
-                    openapi_client.models.routing.Routing(
+                    unifi_client.models.routing.Routing(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -55,7 +55,7 @@ class TestRoutingResponse(unittest.TestCase):
                         static_route_type = '', 
                         type = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

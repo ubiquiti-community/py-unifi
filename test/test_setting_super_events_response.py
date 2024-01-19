@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_events_response import SettingSuperEventsResponse
+from unifi_client.models.setting_super_events_response import SettingSuperEventsResponse
 
 class TestSettingSuperEventsResponse(unittest.TestCase):
     """SettingSuperEventsResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperEventsResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperEventsResponse(
                 data = [
-                    openapi_client.models.setting_super_events.SettingSuperEvents(
+                    unifi_client.models.setting_super_events.SettingSuperEvents(
                         _id = '', 
                         _ignored = '', 
                         attr_hidden = True, 
@@ -47,7 +47,7 @@ class TestSettingSuperEventsResponse(unittest.TestCase):
                         key = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

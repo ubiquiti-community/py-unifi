@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_radio_ai_api import SettingRadioAiApi
+from unifi_client.api.setting_radio_ai_api import SettingRadioAiApi
 
 
 class TestSettingRadioAiApi(unittest.TestCase):

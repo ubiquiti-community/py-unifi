@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dpi_group import DpiGroup
+from unifi_client.models.dpi_group import DpiGroup
 
 class TestDpiGroup(unittest.TestCase):
     """DpiGroup unit test stubs"""

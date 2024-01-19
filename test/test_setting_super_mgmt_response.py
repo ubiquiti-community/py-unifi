@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
+from unifi_client.models.setting_super_mgmt_response import SettingSuperMgmtResponse
 
 class TestSettingSuperMgmtResponse(unittest.TestCase):
     """SettingSuperMgmtResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperMgmtResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperMgmtResponse(
                 data = [
-                    openapi_client.models.setting_super_mgmt.SettingSuperMgmt(
+                    unifi_client.models.setting_super_mgmt.SettingSuperMgmt(
                         _id = '', 
                         analytics_disapproved_for = '', 
                         attr_hidden = True, 
@@ -95,7 +95,7 @@ class TestSettingSuperMgmtResponse(unittest.TestCase):
                         x_ssh_password = '', 
                         x_ssh_username = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

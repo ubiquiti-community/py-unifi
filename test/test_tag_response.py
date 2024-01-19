@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tag_response import TagResponse
+from unifi_client.models.tag_response import TagResponse
 
 class TestTagResponse(unittest.TestCase):
     """TagResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestTagResponse(unittest.TestCase):
         if include_optional:
             return TagResponse(
                 data = [
-                    openapi_client.models.tag.Tag(
+                    unifi_client.models.tag.Tag(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -49,7 +49,7 @@ class TestTagResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

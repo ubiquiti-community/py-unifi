@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_locale import SettingLocale
+from unifi_client.models.setting_locale import SettingLocale
 
 # TODO update the JSON string below
 json = "{}"

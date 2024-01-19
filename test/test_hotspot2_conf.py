@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf import Hotspot2Conf
+from unifi_client.models.hotspot2_conf import Hotspot2Conf
 
 class TestHotspot2Conf(unittest.TestCase):
     """Hotspot2Conf unit test stubs"""
@@ -43,13 +43,13 @@ class TestHotspot2Conf(unittest.TestCase):
                 attr_no_delete = True,
                 attr_no_edit = True,
                 capab = [
-                    openapi_client.models.hotspot2_conf_capab.Hotspot2ConfCapab(
+                    unifi_client.models.hotspot2_conf_capab.Hotspot2ConfCapab(
                         port = 56, 
                         protocol = '', 
                         status = '', )
                     ],
                 cellular_network_list = [
-                    openapi_client.models.hotspot2_conf_cellular_network_list.Hotspot2ConfCellularNetworkList(
+                    unifi_client.models.hotspot2_conf_cellular_network_list.Hotspot2ConfCellularNetworkList(
                         mcc = 56, 
                         mnc = 56, 
                         name = '', )
@@ -60,7 +60,7 @@ class TestHotspot2Conf(unittest.TestCase):
                     ''
                     ],
                 friendly_name = [
-                    openapi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
+                    unifi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
                         language = '', 
                         text = '', )
                     ],
@@ -70,7 +70,7 @@ class TestHotspot2Conf(unittest.TestCase):
                 hessid = '',
                 hessid_used = True,
                 icons = [
-                    openapi_client.models.hotspot2_conf_icons.Hotspot2ConfIcons(
+                    unifi_client.models.hotspot2_conf_icons.Hotspot2ConfIcons(
                         data = '', 
                         filename = '', 
                         height = 56, 
@@ -97,7 +97,7 @@ class TestHotspot2Conf(unittest.TestCase):
                 metrics_uplink_speed = 56,
                 metrics_uplink_speed_set = True,
                 nai_realm_list = [
-                    openapi_client.models.hotspot2_conf_nai_realm_list.Hotspot2ConfNaiRealmList(
+                    unifi_client.models.hotspot2_conf_nai_realm_list.Hotspot2ConfNaiRealmList(
                         auth_ids = '', 
                         auth_vals = '', 
                         eap_method = 56, 
@@ -114,19 +114,19 @@ class TestHotspot2Conf(unittest.TestCase):
                 network_auth_url = '',
                 network_type = 56,
                 osu = [
-                    openapi_client.models.hotspot2_conf_osu.Hotspot2ConfOsu(
+                    unifi_client.models.hotspot2_conf_osu.Hotspot2ConfOsu(
                         description = [
-                            openapi_client.models.hotspot2_conf_description.Hotspot2ConfDescription(
+                            unifi_client.models.hotspot2_conf_description.Hotspot2ConfDescription(
                                 language = '', 
                                 text = '', )
                             ], 
                         friendly_name = [
-                            openapi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
+                            unifi_client.models.hotspot2_conf_friendly_name.Hotspot2ConfFriendlyName(
                                 language = '', 
                                 text = '', )
                             ], 
                         icon = [
-                            openapi_client.models.hotspot2_conf_icon.Hotspot2ConfIcon(
+                            unifi_client.models.hotspot2_conf_icon.Hotspot2ConfIcon(
                                 name = '', )
                             ], 
                         method_oma_dm = True, 
@@ -138,18 +138,18 @@ class TestHotspot2Conf(unittest.TestCase):
                     ],
                 osu_ssid = '',
                 qos_map_dcsp = [
-                    openapi_client.models.hotspot2_conf_qos_map_dcsp.Hotspot2ConfQOSMapDcsp(
+                    unifi_client.models.hotspot2_conf_qos_map_dcsp.Hotspot2ConfQOSMapDcsp(
                         high = 56, 
                         low = 56, )
                     ],
                 qos_map_exceptions = [
-                    openapi_client.models.hotspot2_conf_qos_map_exceptions.Hotspot2ConfQOSMapExceptions(
+                    unifi_client.models.hotspot2_conf_qos_map_exceptions.Hotspot2ConfQOSMapExceptions(
                         dcsp = 56, 
                         up = 56, )
                     ],
                 qos_map_status = True,
                 roaming_consortium_list = [
-                    openapi_client.models.hotspot2_conf_roaming_consortium_list.Hotspot2ConfRoamingConsortiumList(
+                    unifi_client.models.hotspot2_conf_roaming_consortium_list.Hotspot2ConfRoamingConsortiumList(
                         name = '', 
                         oid = '', )
                     ],
@@ -159,7 +159,7 @@ class TestHotspot2Conf(unittest.TestCase):
                 t_c_timestamp = 56,
                 venue_group = 56,
                 venue_name = [
-                    openapi_client.models.hotspot2_conf_venue_name.Hotspot2ConfVenueName(
+                    unifi_client.models.hotspot2_conf_venue_name.Hotspot2ConfVenueName(
                         language = '', 
                         name = '', 
                         url = '', )

@@ -1,4 +1,4 @@
-# openapi_client.Hotspot2ConfApi
+# unifi_client.Hotspot2ConfApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.hotspot2_conf import Hotspot2Conf
-from openapi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.hotspot2_conf import Hotspot2Conf
+from unifi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.Hotspot2ConfApi(api_client)
-    hotspot2_conf = openapi_client.Hotspot2Conf() # Hotspot2Conf |  (optional)
+    api_instance = unifi_client.Hotspot2ConfApi(api_client)
+    hotspot2_conf = unifi_client.Hotspot2Conf() # Hotspot2Conf |  (optional)
 
     try:
-        api_response = api_instance.create_hotspot2_conf(hotspot2_conf=hotspot2_conf)
+        api_response = await api_instance.create_hotspot2_conf(hotspot2_conf=hotspot2_conf)
         print("The response of Hotspot2ConfApi->create_hotspot2_conf:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.Hotspot2ConfApi(api_client)
+    api_instance = unifi_client.Hotspot2ConfApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_hotspot2_conf(id)
+        api_response = await api_instance.delete_hotspot2_conf(id)
         print("The response of Hotspot2ConfApi->delete_hotspot2_conf:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.Hotspot2ConfApi(api_client)
+    api_instance = unifi_client.Hotspot2ConfApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_hotspot2_conf(id)
+        api_response = await api_instance.get_hotspot2_conf(id)
         print("The response of Hotspot2ConfApi->get_hotspot2_conf:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.Hotspot2ConfApi(api_client)
+    api_instance = unifi_client.Hotspot2ConfApi(api_client)
 
     try:
-        api_response = api_instance.list_hotspot2_conf()
+        api_response = await api_instance.list_hotspot2_conf()
         print("The response of Hotspot2ConfApi->list_hotspot2_conf:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
-from openapi_client.models.hotspot2_conf_update_request import Hotspot2ConfUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.hotspot2_conf_response import Hotspot2ConfResponse
+from unifi_client.models.hotspot2_conf_update_request import Hotspot2ConfUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.Hotspot2ConfApi(api_client)
+    api_instance = unifi_client.Hotspot2ConfApi(api_client)
     id = 'id_example' # str | 
-    hotspot2_conf_update_request = openapi_client.Hotspot2ConfUpdateRequest() # Hotspot2ConfUpdateRequest |  (optional)
+    hotspot2_conf_update_request = unifi_client.Hotspot2ConfUpdateRequest() # Hotspot2ConfUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_hotspot2_conf(id, hotspot2_conf_update_request=hotspot2_conf_update_request)
+        api_response = await api_instance.update_hotspot2_conf(id, hotspot2_conf_update_request=hotspot2_conf_update_request)
         print("The response of Hotspot2ConfApi->update_hotspot2_conf:\n")
         pprint(api_response)
     except Exception as e:

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_rps_port_table import DeviceRpsPortTable
+from unifi_client.models.device_rps_port_table import DeviceRpsPortTable
 
 class TestDeviceRpsPortTable(unittest.TestCase):
     """DeviceRpsPortTable unit test stubs"""

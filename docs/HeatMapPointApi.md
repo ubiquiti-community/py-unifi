@@ -1,4 +1,4 @@
-# openapi_client.HeatMapPointApi
+# unifi_client.HeatMapPointApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.heat_map_point import HeatMapPoint
-from openapi_client.models.heat_map_point_response import HeatMapPointResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.heat_map_point import HeatMapPoint
+from unifi_client.models.heat_map_point_response import HeatMapPointResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HeatMapPointApi(api_client)
-    heat_map_point = openapi_client.HeatMapPoint() # HeatMapPoint |  (optional)
+    api_instance = unifi_client.HeatMapPointApi(api_client)
+    heat_map_point = unifi_client.HeatMapPoint() # HeatMapPoint |  (optional)
 
     try:
-        api_response = api_instance.create_heat_map_point(heat_map_point=heat_map_point)
+        api_response = await api_instance.create_heat_map_point(heat_map_point=heat_map_point)
         print("The response of HeatMapPointApi->create_heat_map_point:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.heat_map_point_response import HeatMapPointResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.heat_map_point_response import HeatMapPointResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HeatMapPointApi(api_client)
+    api_instance = unifi_client.HeatMapPointApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_heat_map_point(id)
+        api_response = await api_instance.delete_heat_map_point(id)
         print("The response of HeatMapPointApi->delete_heat_map_point:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.heat_map_point_response import HeatMapPointResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.heat_map_point_response import HeatMapPointResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HeatMapPointApi(api_client)
+    api_instance = unifi_client.HeatMapPointApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_heat_map_point(id)
+        api_response = await api_instance.get_heat_map_point(id)
         print("The response of HeatMapPointApi->get_heat_map_point:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.heat_map_point_response import HeatMapPointResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.heat_map_point_response import HeatMapPointResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HeatMapPointApi(api_client)
+    api_instance = unifi_client.HeatMapPointApi(api_client)
 
     try:
-        api_response = api_instance.list_heat_map_point()
+        api_response = await api_instance.list_heat_map_point()
         print("The response of HeatMapPointApi->list_heat_map_point:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.heat_map_point_response import HeatMapPointResponse
-from openapi_client.models.heat_map_point_update_request import HeatMapPointUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.heat_map_point_response import HeatMapPointResponse
+from unifi_client.models.heat_map_point_update_request import HeatMapPointUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HeatMapPointApi(api_client)
+    api_instance = unifi_client.HeatMapPointApi(api_client)
     id = 'id_example' # str | 
-    heat_map_point_update_request = openapi_client.HeatMapPointUpdateRequest() # HeatMapPointUpdateRequest |  (optional)
+    heat_map_point_update_request = unifi_client.HeatMapPointUpdateRequest() # HeatMapPointUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_heat_map_point(id, heat_map_point_update_request=heat_map_point_update_request)
+        api_response = await api_instance.update_heat_map_point(id, heat_map_point_update_request=heat_map_point_update_request)
         print("The response of HeatMapPointApi->update_heat_map_point:\n")
         pprint(api_response)
     except Exception as e:

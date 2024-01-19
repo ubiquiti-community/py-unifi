@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.radius_profile_response import RADIUSProfileResponse
+from unifi_client.models.radius_profile_response import RADIUSProfileResponse
 
 class TestRADIUSProfileResponse(unittest.TestCase):
     """RADIUSProfileResponse unit test stubs"""
@@ -37,11 +37,11 @@ class TestRADIUSProfileResponse(unittest.TestCase):
         if include_optional:
             return RADIUSProfileResponse(
                 data = [
-                    openapi_client.models.radius_profile.RADIUSProfile(
+                    unifi_client.models.radius_profile.RADIUSProfile(
                         _id = '', 
                         accounting_enabled = True, 
                         acct_servers = [
-                            openapi_client.models.radius_profile_acct_servers.RADIUSProfileAcctServers(
+                            unifi_client.models.radius_profile_acct_servers.RADIUSProfileAcctServers(
                                 ip = '', 
                                 port = 56, 
                                 x_secret = '', )
@@ -51,7 +51,7 @@ class TestRADIUSProfileResponse(unittest.TestCase):
                         attr_no_delete = True, 
                         attr_no_edit = True, 
                         auth_servers = [
-                            openapi_client.models.radius_profile_auth_servers.RADIUSProfileAuthServers(
+                            unifi_client.models.radius_profile_auth_servers.RADIUSProfileAuthServers(
                                 ip = '', 
                                 port = 56, 
                                 x_secret = '', )
@@ -65,7 +65,7 @@ class TestRADIUSProfileResponse(unittest.TestCase):
                         vlan_enabled = True, 
                         vlan_wlan_mode = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

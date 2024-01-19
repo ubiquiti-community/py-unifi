@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_global_switch import SettingGlobalSwitch
+from unifi_client.models.setting_global_switch import SettingGlobalSwitch
 
 class TestSettingGlobalSwitch(unittest.TestCase):
     """SettingGlobalSwitch unit test stubs"""

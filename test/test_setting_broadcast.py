@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_broadcast import SettingBroadcast
+from unifi_client.models.setting_broadcast import SettingBroadcast
 
 class TestSettingBroadcast(unittest.TestCase):
     """SettingBroadcast unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_setting_auto_speedtest_default_response_data_inner import GetSettingAutoSpeedtestDefaultResponseDataInner
+from unifi_client.models.get_setting_auto_speedtest_default_response_data_inner import GetSettingAutoSpeedtestDefaultResponseDataInner
 
 class TestGetSettingAutoSpeedtestDefaultResponseDataInner(unittest.TestCase):
     """GetSettingAutoSpeedtestDefaultResponseDataInner unit test stubs"""
@@ -36,7 +36,7 @@ class TestGetSettingAutoSpeedtestDefaultResponseDataInner(unittest.TestCase):
         model = GetSettingAutoSpeedtestDefaultResponseDataInner()
         if include_optional:
             return GetSettingAutoSpeedtestDefaultResponseDataInner(
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

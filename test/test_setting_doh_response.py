@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_doh_response import SettingDohResponse
+from unifi_client.models.setting_doh_response import SettingDohResponse
 
 class TestSettingDohResponse(unittest.TestCase):
     """SettingDohResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingDohResponse(unittest.TestCase):
         if include_optional:
             return SettingDohResponse(
                 data = [
-                    openapi_client.models.setting_doh.SettingDoh(
+                    unifi_client.models.setting_doh.SettingDoh(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -50,7 +50,7 @@ class TestSettingDohResponse(unittest.TestCase):
                         site_id = '', 
                         state = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

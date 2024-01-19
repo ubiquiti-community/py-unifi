@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.firewall_rule_response import FirewallRuleResponse
+from unifi_client.models.firewall_rule_response import FirewallRuleResponse
 
 class TestFirewallRuleResponse(unittest.TestCase):
     """FirewallRuleResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestFirewallRuleResponse(unittest.TestCase):
         if include_optional:
             return FirewallRuleResponse(
                 data = [
-                    openapi_client.models.firewall_rule.FirewallRule(
+                    unifi_client.models.firewall_rule.FirewallRule(
                         _id = '', 
                         action = '', 
                         attr_hidden = True, 
@@ -89,7 +89,7 @@ class TestFirewallRuleResponse(unittest.TestCase):
                         weekdays = '', 
                         weekdays_negate = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

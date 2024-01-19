@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_baresip_response import SettingBaresipResponse
+from unifi_client.models.setting_baresip_response import SettingBaresipResponse
 
 class TestSettingBaresipResponse(unittest.TestCase):
     """SettingBaresipResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingBaresipResponse(unittest.TestCase):
         if include_optional:
             return SettingBaresipResponse(
                 data = [
-                    openapi_client.models.setting_baresip.SettingBaresip(
+                    unifi_client.models.setting_baresip.SettingBaresip(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -50,7 +50,7 @@ class TestSettingBaresipResponse(unittest.TestCase):
                         server = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

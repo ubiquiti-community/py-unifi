@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.hotspot_package_api import HotspotPackageApi
+from unifi_client.api.hotspot_package_api import HotspotPackageApi
 
 
 class TestHotspotPackageApi(unittest.TestCase):

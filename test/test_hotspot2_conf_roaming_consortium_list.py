@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_roaming_consortium_list import Hotspot2ConfRoamingConsortiumList
+from unifi_client.models.hotspot2_conf_roaming_consortium_list import Hotspot2ConfRoamingConsortiumList
 
 class TestHotspot2ConfRoamingConsortiumList(unittest.TestCase):
     """Hotspot2ConfRoamingConsortiumList unit test stubs"""

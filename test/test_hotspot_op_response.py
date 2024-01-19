@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot_op_response import HotspotOpResponse
+from unifi_client.models.hotspot_op_response import HotspotOpResponse
 
 class TestHotspotOpResponse(unittest.TestCase):
     """HotspotOpResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestHotspotOpResponse(unittest.TestCase):
         if include_optional:
             return HotspotOpResponse(
                 data = [
-                    openapi_client.models.hotspot_op.HotspotOp(
+                    unifi_client.models.hotspot_op.HotspotOp(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -48,7 +48,7 @@ class TestHotspotOpResponse(unittest.TestCase):
                         site_id = '', 
                         x_password = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

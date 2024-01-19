@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.map_update_request import MapUpdateRequest
+from unifi_client.models.map_update_request import MapUpdateRequest
 
 class TestMapUpdateRequest(unittest.TestCase):
     """MapUpdateRequest unit test stubs"""

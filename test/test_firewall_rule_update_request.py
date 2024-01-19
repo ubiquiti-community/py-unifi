@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.firewall_rule_update_request import FirewallRuleUpdateRequest
+from unifi_client.models.firewall_rule_update_request import FirewallRuleUpdateRequest
 
 class TestFirewallRuleUpdateRequest(unittest.TestCase):
     """FirewallRuleUpdateRequest unit test stubs"""

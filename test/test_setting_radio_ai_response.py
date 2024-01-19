@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_radio_ai_response import SettingRadioAiResponse
+from unifi_client.models.setting_radio_ai_response import SettingRadioAiResponse
 
 class TestSettingRadioAiResponse(unittest.TestCase):
     """SettingRadioAiResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingRadioAiResponse(unittest.TestCase):
         if include_optional:
             return SettingRadioAiResponse(
                 data = [
-                    openapi_client.models.setting_radio_ai.SettingRadioAi(
+                    unifi_client.models.setting_radio_ai.SettingRadioAi(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -73,7 +73,7 @@ class TestSettingRadioAiResponse(unittest.TestCase):
                         site_id = '', 
                         use_xy = True, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_mgmt_response import SettingMgmtResponse
+from unifi_client.models.setting_mgmt_response import SettingMgmtResponse
 
 class TestSettingMgmtResponse(unittest.TestCase):
     """SettingMgmtResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingMgmtResponse(unittest.TestCase):
         if include_optional:
             return SettingMgmtResponse(
                 data = [
-                    openapi_client.models.setting_mgmt.SettingMgmt(
+                    unifi_client.models.setting_mgmt.SettingMgmt(
                         _id = '', 
                         advanced_feature_enabled = True, 
                         alert_enabled = True, 
@@ -61,7 +61,7 @@ class TestSettingMgmtResponse(unittest.TestCase):
                         x_ssh_bind_wildcard = True, 
                         x_ssh_enabled = True, 
                         x_ssh_keys = [
-                            openapi_client.models.setting_mgmt_x_ssh_keys.SettingMgmtXSshKeys(
+                            unifi_client.models.setting_mgmt_x_ssh_keys.SettingMgmtXSshKeys(
                                 comment = '', 
                                 date = '', 
                                 fingerprint = '', 
@@ -74,7 +74,7 @@ class TestSettingMgmtResponse(unittest.TestCase):
                         x_ssh_sha512passwd = '', 
                         x_ssh_username = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

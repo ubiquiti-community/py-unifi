@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.spatial_record_api import SpatialRecordApi
+from unifi_client.api.spatial_record_api import SpatialRecordApi
 
 
 class TestSpatialRecordApi(unittest.TestCase):

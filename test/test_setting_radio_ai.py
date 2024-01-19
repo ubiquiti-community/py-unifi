@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_radio_ai import SettingRadioAi
+from unifi_client.models.setting_radio_ai import SettingRadioAi
 
 class TestSettingRadioAi(unittest.TestCase):
     """SettingRadioAi unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.heat_map_response import HeatMapResponse
+from unifi_client.models.heat_map_response import HeatMapResponse
 
 class TestHeatMapResponse(unittest.TestCase):
     """HeatMapResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestHeatMapResponse(unittest.TestCase):
         if include_optional:
             return HeatMapResponse(
                 data = [
-                    openapi_client.models.heat_map.HeatMap(
+                    unifi_client.models.heat_map.HeatMap(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -49,7 +49,7 @@ class TestHeatMapResponse(unittest.TestCase):
                         site_id = '', 
                         type = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

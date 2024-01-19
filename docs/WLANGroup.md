@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wlan_group import WLANGroup
+from unifi_client.models.wlan_group import WLANGroup
 
 # TODO update the JSON string below
 json = "{}"

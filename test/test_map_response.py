@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.map_response import MapResponse
+from unifi_client.models.map_response import MapResponse
 
 class TestMapResponse(unittest.TestCase):
     """MapResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestMapResponse(unittest.TestCase):
         if include_optional:
             return MapResponse(
                 data = [
-                    openapi_client.models.map.Map(
+                    unifi_client.models.map.Map(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -58,7 +58,7 @@ class TestMapResponse(unittest.TestCase):
                         upp = 1.337, 
                         zoom = 56, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

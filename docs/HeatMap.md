@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.heat_map import HeatMap
+from unifi_client.models.heat_map import HeatMap
 
 # TODO update the JSON string below
 json = "{}"

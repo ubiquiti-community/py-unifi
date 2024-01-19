@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.user_update_request import UserUpdateRequest
+from unifi_client.models.user_update_request import UserUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_teleport import SettingTeleport
+from unifi_client.models.setting_teleport import SettingTeleport
 
 class TestSettingTeleport(unittest.TestCase):
     """SettingTeleport unit test stubs"""

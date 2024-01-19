@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dpi_group_response import DpiGroupResponse
+from unifi_client.models.dpi_group_response import DpiGroupResponse
 
 class TestDpiGroupResponse(unittest.TestCase):
     """DpiGroupResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDpiGroupResponse(unittest.TestCase):
         if include_optional:
             return DpiGroupResponse(
                 data = [
-                    openapi_client.models.dpi_group.DpiGroup(
+                    unifi_client.models.dpi_group.DpiGroup(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -50,7 +50,7 @@ class TestDpiGroupResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

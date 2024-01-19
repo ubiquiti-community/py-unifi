@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_super_cloudaccess import SettingSuperCloudaccess
+from unifi_client.models.setting_super_cloudaccess import SettingSuperCloudaccess
 
 # TODO update the JSON string below
 json = "{}"

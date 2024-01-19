@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_super_mail import SettingSuperMail
+from unifi_client.models.setting_super_mail import SettingSuperMail
 
 # TODO update the JSON string below
 json = "{}"

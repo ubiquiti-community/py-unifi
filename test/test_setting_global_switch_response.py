@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
+from unifi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
 
 class TestSettingGlobalSwitchResponse(unittest.TestCase):
     """SettingGlobalSwitchResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingGlobalSwitchResponse(unittest.TestCase):
         if include_optional:
             return SettingGlobalSwitchResponse(
                 data = [
-                    openapi_client.models.setting_global_switch.SettingGlobalSwitch(
+                    unifi_client.models.setting_global_switch.SettingGlobalSwitch(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -56,7 +56,7 @@ class TestSettingGlobalSwitchResponse(unittest.TestCase):
                             ''
                             ], )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.dynamic_dns_response import DynamicDNSResponse
+from unifi_client.models.dynamic_dns_response import DynamicDNSResponse
 
 # TODO update the JSON string below
 json = "{}"

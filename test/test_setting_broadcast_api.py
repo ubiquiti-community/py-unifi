@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_broadcast_api import SettingBroadcastApi
+from unifi_client.api.setting_broadcast_api import SettingBroadcastApi
 
 
 class TestSettingBroadcastApi(unittest.TestCase):

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_connected_battery_overrides import DeviceConnectedBatteryOverrides
+from unifi_client.models.device_connected_battery_overrides import DeviceConnectedBatteryOverrides
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_super_events_api import SettingSuperEventsApi
+from unifi_client.api.setting_super_events_api import SettingSuperEventsApi
 
 
 class TestSettingSuperEventsApi(unittest.TestCase):

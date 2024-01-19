@@ -1,4 +1,4 @@
-# openapi_client.SettingAutoSpeedtestApi
+# unifi_client.SettingAutoSpeedtestApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_auto_speedtest_response import SettingAutoSpeedtestResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_auto_speedtest_response import SettingAutoSpeedtestResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingAutoSpeedtestApi(api_client)
+    api_instance = unifi_client.SettingAutoSpeedtestApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_auto_speedtest()
+        api_response = await api_instance.get_setting_auto_speedtest()
         print("The response of SettingAutoSpeedtestApi->get_setting_auto_speedtest:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_auto_speedtest import SettingAutoSpeedtest
-from openapi_client.models.setting_auto_speedtest_response import SettingAutoSpeedtestResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_auto_speedtest import SettingAutoSpeedtest
+from unifi_client.models.setting_auto_speedtest_response import SettingAutoSpeedtestResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingAutoSpeedtestApi(api_client)
-    setting_auto_speedtest = openapi_client.SettingAutoSpeedtest() # SettingAutoSpeedtest |  (optional)
+    api_instance = unifi_client.SettingAutoSpeedtestApi(api_client)
+    setting_auto_speedtest = unifi_client.SettingAutoSpeedtest() # SettingAutoSpeedtest |  (optional)
 
     try:
-        api_response = api_instance.update_setting_auto_speedtest(setting_auto_speedtest=setting_auto_speedtest)
+        api_response = await api_instance.update_setting_auto_speedtest(setting_auto_speedtest=setting_auto_speedtest)
         print("The response of SettingAutoSpeedtestApi->update_setting_auto_speedtest:\n")
         pprint(api_response)
     except Exception as e:

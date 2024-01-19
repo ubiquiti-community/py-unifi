@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dhcp_option_update_request import DHCPOptionUpdateRequest
+from unifi_client.models.dhcp_option_update_request import DHCPOptionUpdateRequest
 
 class TestDHCPOptionUpdateRequest(unittest.TestCase):
     """DHCPOptionUpdateRequest unit test stubs"""

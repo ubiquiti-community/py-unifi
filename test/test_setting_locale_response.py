@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_locale_response import SettingLocaleResponse
+from unifi_client.models.setting_locale_response import SettingLocaleResponse
 
 class TestSettingLocaleResponse(unittest.TestCase):
     """SettingLocaleResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingLocaleResponse(unittest.TestCase):
         if include_optional:
             return SettingLocaleResponse(
                 data = [
-                    openapi_client.models.setting_locale.SettingLocale(
+                    unifi_client.models.setting_locale.SettingLocale(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingLocaleResponse(unittest.TestCase):
                         site_id = '', 
                         timezone = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

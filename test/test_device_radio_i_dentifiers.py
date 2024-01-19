@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_radio_i_dentifiers import DeviceRadioIDentifiers
+from unifi_client.models.device_radio_i_dentifiers import DeviceRadioIDentifiers
 
 class TestDeviceRadioIDentifiers(unittest.TestCase):
     """DeviceRadioIDentifiers unit test stubs"""

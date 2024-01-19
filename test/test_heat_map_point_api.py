@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.heat_map_point_api import HeatMapPointApi
+from unifi_client.api.heat_map_point_api import HeatMapPointApi
 
 
 class TestHeatMapPointApi(unittest.TestCase):

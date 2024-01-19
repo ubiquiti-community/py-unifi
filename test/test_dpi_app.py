@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.dpi_app import DpiApp
+from unifi_client.models.dpi_app import DpiApp
 
 class TestDpiApp(unittest.TestCase):
     """DpiApp unit test stubs"""

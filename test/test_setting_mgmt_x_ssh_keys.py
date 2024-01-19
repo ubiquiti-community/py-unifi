@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_mgmt_x_ssh_keys import SettingMgmtXSshKeys
+from unifi_client.models.setting_mgmt_x_ssh_keys import SettingMgmtXSshKeys
 
 class TestSettingMgmtXSshKeys(unittest.TestCase):
     """SettingMgmtXSshKeys unit test stubs"""

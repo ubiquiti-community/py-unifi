@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hotspot2_conf_qos_map_dcsp import Hotspot2ConfQOSMapDcsp
+from unifi_client.models.hotspot2_conf_qos_map_dcsp import Hotspot2ConfQOSMapDcsp
 
 class TestHotspot2ConfQOSMapDcsp(unittest.TestCase):
     """Hotspot2ConfQOSMapDcsp unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_smtp_response import SettingSuperSmtpResponse
+from unifi_client.models.setting_super_smtp_response import SettingSuperSmtpResponse
 
 class TestSettingSuperSmtpResponse(unittest.TestCase):
     """SettingSuperSmtpResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperSmtpResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperSmtpResponse(
                 data = [
-                    openapi_client.models.setting_super_smtp.SettingSuperSmtp(
+                    unifi_client.models.setting_super_smtp.SettingSuperSmtp(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -55,7 +55,7 @@ class TestSettingSuperSmtpResponse(unittest.TestCase):
                         username = '', 
                         x_password = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

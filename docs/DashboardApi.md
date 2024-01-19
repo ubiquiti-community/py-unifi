@@ -1,4 +1,4 @@
-# openapi_client.DashboardApi
+# unifi_client.DashboardApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboard import Dashboard
-from openapi_client.models.dashboard_response import DashboardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dashboard import Dashboard
+from unifi_client.models.dashboard_response import DashboardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardApi(api_client)
-    dashboard = openapi_client.Dashboard() # Dashboard |  (optional)
+    api_instance = unifi_client.DashboardApi(api_client)
+    dashboard = unifi_client.Dashboard() # Dashboard |  (optional)
 
     try:
-        api_response = api_instance.create_dashboard(dashboard=dashboard)
+        api_response = await api_instance.create_dashboard(dashboard=dashboard)
         print("The response of DashboardApi->create_dashboard:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboard_response import DashboardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dashboard_response import DashboardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardApi(api_client)
+    api_instance = unifi_client.DashboardApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_dashboard(id)
+        api_response = await api_instance.delete_dashboard(id)
         print("The response of DashboardApi->delete_dashboard:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboard_response import DashboardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dashboard_response import DashboardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardApi(api_client)
+    api_instance = unifi_client.DashboardApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_dashboard(id)
+        api_response = await api_instance.get_dashboard(id)
         print("The response of DashboardApi->get_dashboard:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboard_response import DashboardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dashboard_response import DashboardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardApi(api_client)
+    api_instance = unifi_client.DashboardApi(api_client)
 
     try:
-        api_response = api_instance.list_dashboard()
+        api_response = await api_instance.list_dashboard()
         print("The response of DashboardApi->list_dashboard:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboard_response import DashboardResponse
-from openapi_client.models.dashboard_update_request import DashboardUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.dashboard_response import DashboardResponse
+from unifi_client.models.dashboard_update_request import DashboardUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardApi(api_client)
+    api_instance = unifi_client.DashboardApi(api_client)
     id = 'id_example' # str | 
-    dashboard_update_request = openapi_client.DashboardUpdateRequest() # DashboardUpdateRequest |  (optional)
+    dashboard_update_request = unifi_client.DashboardUpdateRequest() # DashboardUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_dashboard(id, dashboard_update_request=dashboard_update_request)
+        api_response = await api_instance.update_dashboard(id, dashboard_update_request=dashboard_update_request)
         print("The response of DashboardApi->update_dashboard:\n")
         pprint(api_response)
     except Exception as e:

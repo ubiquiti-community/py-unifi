@@ -1,4 +1,4 @@
-# openapi_client.SettingGlobalSwitchApi
+# unifi_client.SettingGlobalSwitchApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -19,25 +19,25 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingGlobalSwitchApi(api_client)
+    api_instance = unifi_client.SettingGlobalSwitchApi(api_client)
 
     try:
-        api_response = api_instance.get_setting_global_switch()
+        api_response = await api_instance.get_setting_global_switch()
         print("The response of SettingGlobalSwitchApi->get_setting_global_switch:\n")
         pprint(api_response)
     except Exception as e:
@@ -83,27 +83,27 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.setting_global_switch import SettingGlobalSwitch
-from openapi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.setting_global_switch import SettingGlobalSwitch
+from unifi_client.models.setting_global_switch_response import SettingGlobalSwitchResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingGlobalSwitchApi(api_client)
-    setting_global_switch = openapi_client.SettingGlobalSwitch() # SettingGlobalSwitch |  (optional)
+    api_instance = unifi_client.SettingGlobalSwitchApi(api_client)
+    setting_global_switch = unifi_client.SettingGlobalSwitch() # SettingGlobalSwitch |  (optional)
 
     try:
-        api_response = api_instance.update_setting_global_switch(setting_global_switch=setting_global_switch)
+        api_response = await api_instance.update_setting_global_switch(setting_global_switch=setting_global_switch)
         print("The response of SettingGlobalSwitchApi->update_setting_global_switch:\n")
         pprint(api_response)
     except Exception as e:

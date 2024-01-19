@@ -103,7 +103,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wlan import WLAN
+from unifi_client.models.wlan import WLAN
 
 # TODO update the JSON string below
 json = "{}"

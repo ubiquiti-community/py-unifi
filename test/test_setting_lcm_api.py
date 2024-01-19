@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_lcm_api import SettingLcmApi
+from unifi_client.api.setting_lcm_api import SettingLcmApi
 
 
 class TestSettingLcmApi(unittest.TestCase):

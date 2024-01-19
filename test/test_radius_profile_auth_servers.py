@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.radius_profile_auth_servers import RADIUSProfileAuthServers
+from unifi_client.models.radius_profile_auth_servers import RADIUSProfileAuthServers
 
 class TestRADIUSProfileAuthServers(unittest.TestCase):
     """RADIUSProfileAuthServers unit test stubs"""

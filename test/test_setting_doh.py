@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_doh import SettingDoh
+from unifi_client.models.setting_doh import SettingDoh
 
 class TestSettingDoh(unittest.TestCase):
     """SettingDoh unit test stubs"""

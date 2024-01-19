@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_cloudaccess_response import SettingSuperCloudaccessResponse
+from unifi_client.models.setting_super_cloudaccess_response import SettingSuperCloudaccessResponse
 
 class TestSettingSuperCloudaccessResponse(unittest.TestCase):
     """SettingSuperCloudaccessResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperCloudaccessResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperCloudaccessResponse(
                 data = [
-                    openapi_client.models.setting_super_cloudaccess.SettingSuperCloudaccess(
+                    unifi_client.models.setting_super_cloudaccess.SettingSuperCloudaccess(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -53,7 +53,7 @@ class TestSettingSuperCloudaccessResponse(unittest.TestCase):
                         x_certificate_pem = '', 
                         x_private_key = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

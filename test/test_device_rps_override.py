@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_rps_override import DeviceRpsOverride
+from unifi_client.models.device_rps_override import DeviceRpsOverride
 
 class TestDeviceRpsOverride(unittest.TestCase):
     """DeviceRpsOverride unit test stubs"""
@@ -38,7 +38,7 @@ class TestDeviceRpsOverride(unittest.TestCase):
             return DeviceRpsOverride(
                 power_management_mode = '',
                 rps_port_table = [
-                    openapi_client.models.device_rps_port_table.DeviceRpsPortTable(
+                    unifi_client.models.device_rps_port_table.DeviceRpsPortTable(
                         name = '', 
                         port_idx = 56, 
                         port_mode = '', )

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.broadcast_group import BroadcastGroup
+from unifi_client.models.broadcast_group import BroadcastGroup
 
 class TestBroadcastGroup(unittest.TestCase):
     """BroadcastGroup unit test stubs"""

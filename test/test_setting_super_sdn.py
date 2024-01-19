@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_sdn import SettingSuperSdn
+from unifi_client.models.setting_super_sdn import SettingSuperSdn
 
 class TestSettingSuperSdn(unittest.TestCase):
     """SettingSuperSdn unit test stubs"""

@@ -91,7 +91,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.device_update_request import DeviceUpdateRequest
+from unifi_client.models.device_update_request import DeviceUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

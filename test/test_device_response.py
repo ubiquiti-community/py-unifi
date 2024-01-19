@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_response import DeviceResponse
+from unifi_client.models.device_response import DeviceResponse
 
 class TestDeviceResponse(unittest.TestCase):
     """DeviceResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestDeviceResponse(unittest.TestCase):
         if include_optional:
             return DeviceResponse(
                 data = [
-                    openapi_client.models.device.Device(
+                    unifi_client.models.device.Device(
                         _id = '', 
                         adopted = True, 
                         atf_enabled = True, 
@@ -49,7 +49,7 @@ class TestDeviceResponse(unittest.TestCase):
                         baresip_auth_user = '', 
                         baresip_enabled = True, 
                         baresip_extension = '', 
-                        config_network = openapi_client.models.device_config_network.DeviceConfigNetwork(
+                        config_network = unifi_client.models.device_config_network.DeviceConfigNetwork(
                             bonding_enabled = True, 
                             dns1 = '', 
                             dns2 = '', 
@@ -59,18 +59,18 @@ class TestDeviceResponse(unittest.TestCase):
                             netmask = '', 
                             type = '', ), 
                         connected_battery_overrides = [
-                            openapi_client.models.device_connected_battery_overrides.DeviceConnectedBatteryOverrides(
+                            unifi_client.models.device_connected_battery_overrides.DeviceConnectedBatteryOverrides(
                                 mac = '', )
                             ], 
                         disabled = True, 
                         dot1x_fallback_networkconf_id = '', 
                         dot1x_portctrl_enabled = True, 
                         dpi_enabled = True, 
-                        ether_lighting = openapi_client.models.device_ether_lighting.DeviceEtherLighting(
+                        ether_lighting = unifi_client.models.device_ether_lighting.DeviceEtherLighting(
                             brightness = 56, 
                             mode = '', ), 
                         ethernet_overrides = [
-                            openapi_client.models.device_ethernet_overrides.DeviceEthernetOverrides(
+                            unifi_client.models.device_ethernet_overrides.DeviceEthernetOverrides(
                                 ifname = '', 
                                 networkgroup = '', )
                             ], 
@@ -115,7 +115,7 @@ class TestDeviceResponse(unittest.TestCase):
                         outdoor_mode_override = '', 
                         outlet_enabled = True, 
                         outlet_overrides = [
-                            openapi_client.models.device_outlet_overrides.DeviceOutletOverrides(
+                            unifi_client.models.device_outlet_overrides.DeviceOutletOverrides(
                                 cycle_enabled = True, 
                                 index = 56, 
                                 name = '', 
@@ -123,7 +123,7 @@ class TestDeviceResponse(unittest.TestCase):
                             ], 
                         outlet_power_cycle_enabled = True, 
                         port_overrides = [
-                            openapi_client.models.device_port_overrides.DevicePortOverrides(
+                            unifi_client.models.device_port_overrides.DevicePortOverrides(
                                 aggregate_num_ports = 56, 
                                 autoneg = True, 
                                 dot1x_ctrl = '', 
@@ -174,7 +174,7 @@ class TestDeviceResponse(unittest.TestCase):
                         power_source_ctrl_budget = 56, 
                         power_source_ctrl_enabled = True, 
                         radio_table = [
-                            openapi_client.models.device_radio_table.DeviceRadioTable(
+                            unifi_client.models.device_radio_table.DeviceRadioTable(
                                 antenna_gain = 56, 
                                 antenna_id = 56, 
                                 backup_channel = '', 
@@ -189,7 +189,7 @@ class TestDeviceResponse(unittest.TestCase):
                                 name = '', 
                                 radio = '', 
                                 radio_identifiers = [
-                                    openapi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
+                                    unifi_client.models.device_radio_i_dentifiers.DeviceRadioIDentifiers(
                                         device_id = '', 
                                         radio_name = '', )
                                     ], 
@@ -201,10 +201,10 @@ class TestDeviceResponse(unittest.TestCase):
                             ], 
                         radiusprofile_id = '', 
                         resetbtn_enabled = '', 
-                        rps_override = openapi_client.models.device_rps_override.DeviceRpsOverride(
+                        rps_override = unifi_client.models.device_rps_override.DeviceRpsOverride(
                             power_management_mode = '', 
                             rps_port_table = [
-                                openapi_client.models.device_rps_port_table.DeviceRpsPortTable(
+                                unifi_client.models.device_rps_port_table.DeviceRpsPortTable(
                                     name = '', 
                                     port_idx = 56, 
                                     port_mode = '', )
@@ -223,7 +223,7 @@ class TestDeviceResponse(unittest.TestCase):
                         x_baresip_password = '', 
                         y = 1.337, )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

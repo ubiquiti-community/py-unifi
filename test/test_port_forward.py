@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.port_forward import PortForward
+from unifi_client.models.port_forward import PortForward
 
 class TestPortForward(unittest.TestCase):
     """PortForward unit test stubs"""

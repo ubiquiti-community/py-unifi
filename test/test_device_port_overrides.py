@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_port_overrides import DevicePortOverrides
+from unifi_client.models.device_port_overrides import DevicePortOverrides
 
 class TestDevicePortOverrides(unittest.TestCase):
     """DevicePortOverrides unit test stubs"""

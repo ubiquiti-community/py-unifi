@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_group_response import WLANGroupResponse
+from unifi_client.models.wlan_group_response import WLANGroupResponse
 
 class TestWLANGroupResponse(unittest.TestCase):
     """WLANGroupResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestWLANGroupResponse(unittest.TestCase):
         if include_optional:
             return WLANGroupResponse(
                 data = [
-                    openapi_client.models.wlan_group.WLANGroup(
+                    unifi_client.models.wlan_group.WLANGroup(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -46,7 +46,7 @@ class TestWLANGroupResponse(unittest.TestCase):
                         name = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

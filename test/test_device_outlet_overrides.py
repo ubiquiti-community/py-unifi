@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.device_outlet_overrides import DeviceOutletOverrides
+from unifi_client.models.device_outlet_overrides import DeviceOutletOverrides
 
 class TestDeviceOutletOverrides(unittest.TestCase):
     """DeviceOutletOverrides unit test stubs"""

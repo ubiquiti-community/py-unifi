@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_mail_response import SettingSuperMailResponse
+from unifi_client.models.setting_super_mail_response import SettingSuperMailResponse
 
 class TestSettingSuperMailResponse(unittest.TestCase):
     """SettingSuperMailResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperMailResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperMailResponse(
                 data = [
-                    openapi_client.models.setting_super_mail.SettingSuperMail(
+                    unifi_client.models.setting_super_mail.SettingSuperMail(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -47,7 +47,7 @@ class TestSettingSuperMailResponse(unittest.TestCase):
                         provider = '', 
                         site_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

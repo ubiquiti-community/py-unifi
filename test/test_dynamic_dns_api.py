@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.dynamic_dns_api import DynamicDNSApi
+from unifi_client.api.dynamic_dns_api import DynamicDNSApi
 
 
 class TestDynamicDNSApi(unittest.TestCase):

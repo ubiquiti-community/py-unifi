@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.network_api import NetworkApi
+from unifi_client.api.network_api import NetworkApi
 
 
 class TestNetworkApi(unittest.TestCase):

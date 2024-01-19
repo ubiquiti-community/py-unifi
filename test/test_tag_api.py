@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.tag_api import TagApi
+from unifi_client.api.tag_api import TagApi
 
 
 class TestTagApi(unittest.TestCase):

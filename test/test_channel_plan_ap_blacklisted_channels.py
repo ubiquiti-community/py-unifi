@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_plan_ap_blacklisted_channels import ChannelPlanApBlacklistedChannels
+from unifi_client.models.channel_plan_ap_blacklisted_channels import ChannelPlanApBlacklistedChannels
 
 class TestChannelPlanApBlacklistedChannels(unittest.TestCase):
     """ChannelPlanApBlacklistedChannels unit test stubs"""

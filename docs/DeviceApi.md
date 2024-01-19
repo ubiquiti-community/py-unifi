@@ -1,4 +1,4 @@
-# openapi_client.DeviceApi
+# unifi_client.DeviceApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.device import Device
-from openapi_client.models.device_response import DeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.device import Device
+from unifi_client.models.device_response import DeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceApi(api_client)
-    device = openapi_client.Device() # Device |  (optional)
+    api_instance = unifi_client.DeviceApi(api_client)
+    device = unifi_client.Device() # Device |  (optional)
 
     try:
-        api_response = api_instance.create_device(device=device)
+        api_response = await api_instance.create_device(device=device)
         print("The response of DeviceApi->create_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.device_response import DeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.device_response import DeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceApi(api_client)
+    api_instance = unifi_client.DeviceApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_device(id)
+        api_response = await api_instance.delete_device(id)
         print("The response of DeviceApi->delete_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.device_response import DeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.device_response import DeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceApi(api_client)
+    api_instance = unifi_client.DeviceApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_device(id)
+        api_response = await api_instance.get_device(id)
         print("The response of DeviceApi->get_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.device_response import DeviceResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.device_response import DeviceResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceApi(api_client)
+    api_instance = unifi_client.DeviceApi(api_client)
 
     try:
-        api_response = api_instance.list_device()
+        api_response = await api_instance.list_device()
         print("The response of DeviceApi->list_device:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.device_response import DeviceResponse
-from openapi_client.models.device_update_request import DeviceUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.device_response import DeviceResponse
+from unifi_client.models.device_update_request import DeviceUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DeviceApi(api_client)
+    api_instance = unifi_client.DeviceApi(api_client)
     id = 'id_example' # str | 
-    device_update_request = openapi_client.DeviceUpdateRequest() # DeviceUpdateRequest |  (optional)
+    device_update_request = unifi_client.DeviceUpdateRequest() # DeviceUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_device(id, device_update_request=device_update_request)
+        api_response = await api_instance.update_device(id, device_update_request=device_update_request)
         print("The response of DeviceApi->update_device:\n")
         pprint(api_response)
     except Exception as e:

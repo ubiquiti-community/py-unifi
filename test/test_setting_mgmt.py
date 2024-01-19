@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_mgmt import SettingMgmt
+from unifi_client.models.setting_mgmt import SettingMgmt
 
 class TestSettingMgmt(unittest.TestCase):
     """SettingMgmt unit test stubs"""
@@ -59,7 +59,7 @@ class TestSettingMgmt(unittest.TestCase):
                 x_ssh_bind_wildcard = True,
                 x_ssh_enabled = True,
                 x_ssh_keys = [
-                    openapi_client.models.setting_mgmt_x_ssh_keys.SettingMgmtXSshKeys(
+                    unifi_client.models.setting_mgmt_x_ssh_keys.SettingMgmtXSshKeys(
                         comment = '', 
                         date = '', 
                         fingerprint = '', 

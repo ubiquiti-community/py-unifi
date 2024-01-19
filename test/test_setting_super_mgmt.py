@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_mgmt import SettingSuperMgmt
+from unifi_client.models.setting_super_mgmt import SettingSuperMgmt
 
 class TestSettingSuperMgmt(unittest.TestCase):
     """SettingSuperMgmt unit test stubs"""

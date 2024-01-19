@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_global_switch_api import SettingGlobalSwitchApi
+from unifi_client.api.setting_global_switch_api import SettingGlobalSwitchApi
 
 
 class TestSettingGlobalSwitchApi(unittest.TestCase):

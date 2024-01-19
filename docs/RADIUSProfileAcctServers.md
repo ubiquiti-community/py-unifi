@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.radius_profile_acct_servers import RADIUSProfileAcctServers
+from unifi_client.models.radius_profile_acct_servers import RADIUSProfileAcctServers
 
 # TODO update the JSON string below
 json = "{}"

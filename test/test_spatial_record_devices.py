@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.spatial_record_devices import SpatialRecordDevices
+from unifi_client.models.spatial_record_devices import SpatialRecordDevices
 
 class TestSpatialRecordDevices(unittest.TestCase):
     """SpatialRecordDevices unit test stubs"""
@@ -37,7 +37,7 @@ class TestSpatialRecordDevices(unittest.TestCase):
         if include_optional:
             return SpatialRecordDevices(
                 mac = '',
-                position = openapi_client.models.spatial_record_position.SpatialRecordPosition(
+                position = unifi_client.models.spatial_record_position.SpatialRecordPosition(
                     x = 1.337, 
                     y = 1.337, 
                     z = 1.337, )

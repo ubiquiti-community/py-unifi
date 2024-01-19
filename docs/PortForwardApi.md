@@ -1,4 +1,4 @@
-# openapi_client.PortForwardApi
+# unifi_client.PortForwardApi
 
 All URIs are relative to *https://unifi.ui.com/proxy/network/api/s/default*
 
@@ -22,27 +22,27 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.port_forward import PortForward
-from openapi_client.models.port_forward_response import PortForwardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.port_forward import PortForward
+from unifi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PortForwardApi(api_client)
-    port_forward = openapi_client.PortForward() # PortForward |  (optional)
+    api_instance = unifi_client.PortForwardApi(api_client)
+    port_forward = unifi_client.PortForward() # PortForward |  (optional)
 
     try:
-        api_response = api_instance.create_port_forward(port_forward=port_forward)
+        api_response = await api_instance.create_port_forward(port_forward=port_forward)
         print("The response of PortForwardApi->create_port_forward:\n")
         pprint(api_response)
     except Exception as e:
@@ -91,26 +91,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.port_forward_response import PortForwardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PortForwardApi(api_client)
+    api_instance = unifi_client.PortForwardApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.delete_port_forward(id)
+        api_response = await api_instance.delete_port_forward(id)
         print("The response of PortForwardApi->delete_port_forward:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,26 +159,26 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.port_forward_response import PortForwardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PortForwardApi(api_client)
+    api_instance = unifi_client.PortForwardApi(api_client)
     id = 'id_example' # str | 
 
     try:
-        api_response = api_instance.get_port_forward(id)
+        api_response = await api_instance.get_port_forward(id)
         print("The response of PortForwardApi->get_port_forward:\n")
         pprint(api_response)
     except Exception as e:
@@ -227,25 +227,25 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.port_forward_response import PortForwardResponse
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PortForwardApi(api_client)
+    api_instance = unifi_client.PortForwardApi(api_client)
 
     try:
-        api_response = api_instance.list_port_forward()
+        api_response = await api_instance.list_port_forward()
         print("The response of PortForwardApi->list_port_forward:\n")
         pprint(api_response)
     except Exception as e:
@@ -291,28 +291,28 @@ No authorization required
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.port_forward_response import PortForwardResponse
-from openapi_client.models.port_forward_update_request import PortForwardUpdateRequest
-from openapi_client.rest import ApiException
+import unifi_client
+from unifi_client.models.port_forward_response import PortForwardResponse
+from unifi_client.models.port_forward_update_request import PortForwardUpdateRequest
+from unifi_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://unifi.ui.com/proxy/network/api/s/default
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = unifi_client.Configuration(
     host = "https://unifi.ui.com/proxy/network/api/s/default"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+async with unifi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PortForwardApi(api_client)
+    api_instance = unifi_client.PortForwardApi(api_client)
     id = 'id_example' # str | 
-    port_forward_update_request = openapi_client.PortForwardUpdateRequest() # PortForwardUpdateRequest |  (optional)
+    port_forward_update_request = unifi_client.PortForwardUpdateRequest() # PortForwardUpdateRequest |  (optional)
 
     try:
-        api_response = api_instance.update_port_forward(id, port_forward_update_request=port_forward_update_request)
+        api_response = await api_instance.update_port_forward(id, port_forward_update_request=port_forward_update_request)
         print("The response of PortForwardApi->update_port_forward:\n")
         pprint(api_response)
     except Exception as e:

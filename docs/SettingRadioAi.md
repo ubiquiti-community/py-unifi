@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_radio_ai import SettingRadioAi
+from unifi_client.models.setting_radio_ai import SettingRadioAi
 
 # TODO update the JSON string below
 json = "{}"

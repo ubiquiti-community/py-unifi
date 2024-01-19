@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.user_response import UserResponse
+from unifi_client.models.user_response import UserResponse
 
 class TestUserResponse(unittest.TestCase):
     """UserResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestUserResponse(unittest.TestCase):
         if include_optional:
             return UserResponse(
                 data = [
-                    openapi_client.models.user.User(
+                    unifi_client.models.user.User(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -63,7 +63,7 @@ class TestUserResponse(unittest.TestCase):
                         virtual_network_override_enabled = True, 
                         virtual_network_override_id = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

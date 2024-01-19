@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.setting_dpi_api import SettingDpiApi
+from unifi_client.api.setting_dpi_api import SettingDpiApi
 
 
 class TestSettingDpiApi(unittest.TestCase):

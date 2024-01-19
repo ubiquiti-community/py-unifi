@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.routing_api import RoutingApi
+from unifi_client.api.routing_api import RoutingApi
 
 
 class TestRoutingApi(unittest.TestCase):

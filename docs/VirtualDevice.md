@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.virtual_device import VirtualDevice
+from unifi_client.models.virtual_device import VirtualDevice
 
 # TODO update the JSON string below
 json = "{}"

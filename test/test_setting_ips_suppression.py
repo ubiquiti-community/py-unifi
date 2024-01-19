@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_suppression import SettingIpsSuppression
+from unifi_client.models.setting_ips_suppression import SettingIpsSuppression
 
 class TestSettingIpsSuppression(unittest.TestCase):
     """SettingIpsSuppression unit test stubs"""
@@ -37,13 +37,13 @@ class TestSettingIpsSuppression(unittest.TestCase):
         if include_optional:
             return SettingIpsSuppression(
                 alerts = [
-                    openapi_client.models.setting_ips_alerts.SettingIpsAlerts(
+                    unifi_client.models.setting_ips_alerts.SettingIpsAlerts(
                         category = '', 
                         gid = 56, 
                         id = 56, 
                         signature = '', 
                         tracking = [
-                            openapi_client.models.setting_ips_tracking.SettingIpsTracking(
+                            unifi_client.models.setting_ips_tracking.SettingIpsTracking(
                                 direction = '', 
                                 mode = '', 
                                 value = '', )
@@ -51,7 +51,7 @@ class TestSettingIpsSuppression(unittest.TestCase):
                         type = '', )
                     ],
                 whitelist = [
-                    openapi_client.models.setting_ips_whitelist.SettingIpsWhitelist(
+                    unifi_client.models.setting_ips_whitelist.SettingIpsWhitelist(
                         direction = '', 
                         mode = '', 
                         value = '', )

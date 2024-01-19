@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.meta import Meta
+from unifi_client.models.meta import Meta
 
 class TestMeta(unittest.TestCase):
     """Meta unit test stubs"""

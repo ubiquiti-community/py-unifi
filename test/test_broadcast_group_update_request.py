@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.broadcast_group_update_request import BroadcastGroupUpdateRequest
+from unifi_client.models.broadcast_group_update_request import BroadcastGroupUpdateRequest
 
 class TestBroadcastGroupUpdateRequest(unittest.TestCase):
     """BroadcastGroupUpdateRequest unit test stubs"""

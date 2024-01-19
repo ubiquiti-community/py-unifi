@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.schedule_task_upgrade_targets import ScheduleTaskUpgradeTargets
+from unifi_client.models.schedule_task_upgrade_targets import ScheduleTaskUpgradeTargets
 
 # TODO update the JSON string below
 json = "{}"

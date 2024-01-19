@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_super_sdn_response import SettingSuperSdnResponse
+from unifi_client.models.setting_super_sdn_response import SettingSuperSdnResponse
 
 class TestSettingSuperSdnResponse(unittest.TestCase):
     """SettingSuperSdnResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestSettingSuperSdnResponse(unittest.TestCase):
         if include_optional:
             return SettingSuperSdnResponse(
                 data = [
-                    openapi_client.models.setting_super_sdn.SettingSuperSdn(
+                    unifi_client.models.setting_super_sdn.SettingSuperSdn(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -52,7 +52,7 @@ class TestSettingSuperSdnResponse(unittest.TestCase):
                         sso_login_enabled = '', 
                         ubic_uuid = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

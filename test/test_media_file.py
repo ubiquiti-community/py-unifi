@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.media_file import MediaFile
+from unifi_client.models.media_file import MediaFile
 
 class TestMediaFile(unittest.TestCase):
     """MediaFile unit test stubs"""

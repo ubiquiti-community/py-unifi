@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.setting_ips_ad_blocking_configurations import SettingIpsAdBlockingConfigurations
+from unifi_client.models.setting_ips_ad_blocking_configurations import SettingIpsAdBlockingConfigurations
 
 class TestSettingIpsAdBlockingConfigurations(unittest.TestCase):
     """SettingIpsAdBlockingConfigurations unit test stubs"""

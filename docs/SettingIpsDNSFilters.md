@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_ips_dns_filters import SettingIpsDNSFilters
+from unifi_client.models.setting_ips_dns_filters import SettingIpsDNSFilters
 
 # TODO update the JSON string below
 json = "{}"

@@ -240,7 +240,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_update_request import NetworkUpdateRequest
+from unifi_client.models.network_update_request import NetworkUpdateRequest
 
 # TODO update the JSON string below
 json = "{}"

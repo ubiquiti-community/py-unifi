@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.setting_magic_site_to_site_vpn_response import SettingMagicSiteToSiteVpnResponse
+from unifi_client.models.setting_magic_site_to_site_vpn_response import SettingMagicSiteToSiteVpnResponse
 
 # TODO update the JSON string below
 json = "{}"

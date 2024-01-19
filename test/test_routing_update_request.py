@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.routing_update_request import RoutingUpdateRequest
+from unifi_client.models.routing_update_request import RoutingUpdateRequest
 
 class TestRoutingUpdateRequest(unittest.TestCase):
     """RoutingUpdateRequest unit test stubs"""

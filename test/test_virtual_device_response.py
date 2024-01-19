@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.virtual_device_response import VirtualDeviceResponse
+from unifi_client.models.virtual_device_response import VirtualDeviceResponse
 
 class TestVirtualDeviceResponse(unittest.TestCase):
     """VirtualDeviceResponse unit test stubs"""
@@ -37,7 +37,7 @@ class TestVirtualDeviceResponse(unittest.TestCase):
         if include_optional:
             return VirtualDeviceResponse(
                 data = [
-                    openapi_client.models.virtual_device.VirtualDevice(
+                    unifi_client.models.virtual_device.VirtualDevice(
                         _id = '', 
                         attr_hidden = True, 
                         attr_hidden_id = '', 
@@ -51,7 +51,7 @@ class TestVirtualDeviceResponse(unittest.TestCase):
                         x = '', 
                         y = '', )
                     ],
-                meta = openapi_client.models.meta.Meta(
+                meta = unifi_client.models.meta.Meta(
                     msg = '', 
                     rc = '', )
             )

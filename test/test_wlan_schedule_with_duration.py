@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_schedule_with_duration import WLANScheduleWithDuration
+from unifi_client.models.wlan_schedule_with_duration import WLANScheduleWithDuration
 
 class TestWLANScheduleWithDuration(unittest.TestCase):
     """WLANScheduleWithDuration unit test stubs"""

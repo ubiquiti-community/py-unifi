@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wlan_sae_psk import WLANSaePsk
+from unifi_client.models.wlan_sae_psk import WLANSaePsk
 
 # TODO update the JSON string below
 json = "{}"

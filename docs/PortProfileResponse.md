@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.port_profile_response import PortProfileResponse
+from unifi_client.models.port_profile_response import PortProfileResponse
 
 # TODO update the JSON string below
 json = "{}"

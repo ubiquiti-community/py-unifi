@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wlan_private_preshared_keys import WLANPrivatePresharedKeys
+from unifi_client.models.wlan_private_preshared_keys import WLANPrivatePresharedKeys
 
 class TestWLANPrivatePresharedKeys(unittest.TestCase):
     """WLANPrivatePresharedKeys unit test stubs"""

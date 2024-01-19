@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_plan_coupling import ChannelPlanCoupling
+from unifi_client.models.channel_plan_coupling import ChannelPlanCoupling
 
 class TestChannelPlanCoupling(unittest.TestCase):
     """ChannelPlanCoupling unit test stubs"""
