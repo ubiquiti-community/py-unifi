@@ -1,0 +1,23 @@
+---
+name: Deploy to GitHub Pages
+on:
+  workflow_dispatch: {}
+  pull_request: {}
+  push:
+    branches:
+      - main
+    tags:
+      - v*
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hatamiarash7/openapi-generator@v0.3.0
+        with:
+          generator: python
+          openapi-url: https://ubiquiti-community.github.io/unifi-api/openapi.yaml
+          output-dir: .
+
+  
